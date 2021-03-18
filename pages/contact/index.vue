@@ -43,21 +43,42 @@
               <a href="https://policies.google.com/terms">Terms of Service</a> apply.
           </small>
         </form> -->
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-  
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+        <!-- <form name="contact">
+      <p>
+        <label>Email: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <div data-netlify-recaptcha="true"></div>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form> -->
+    <form
+    ref="form"
+    method="POST" data-netlify-recaptcha="true" data-netlify="true"
+    @submit.prevent="onSubmit"
+  >
+    <fieldset>
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+      />
+      <input
+        type="email"
+        name="emil"
+        placeholder="Email"
+      />
+    </fieldset>
+    <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" />
+    <button
+      type="submit"
+    >
+      Submit Form
+    </button>
+  </form>
       </div>
     </section>
   </section>
@@ -68,28 +89,28 @@
 export default {
   layout: 'headerbar',
   methods: {
-    onError(error) {
-      console.log('Error happened:', error)
-    },
-    async onSubmit() {
-      try {
-        const token = await this.$recaptcha.getResponse()
-        console.log('ReCaptcha token:', token)
-        await this.$recaptcha.reset()
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.log('Login error:', error)
-      }
-    },
-    onSuccess(token) {
-      console.log('Succeeded:', token)
-      // here you submit the form
-      this.$refs.form.submit()
-    },
-    onExpired() {
-      console.log('Expired')
-    }
-  }
+     onError(error) {
+       console.log('Error happened:', error)
+     },
+     async onSubmit() {
+       try {
+         const token = await this.$recaptcha.getResponse()
+         console.log('ReCaptcha token:', token)
+         await this.$recaptcha.reset()
+       } catch (error) {
+         // eslint-disable-next-line no-console
+         console.log('Login error:', error)
+       }
+     },
+     onSuccess(token) {
+       console.log('Succeeded:', token)
+       // here you submit the form
+       this.$refs.form.submit()
+     },
+     onExpired() {
+       console.log('Expired')
+     }
+   }
 }
 </script>
 
