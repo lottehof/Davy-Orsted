@@ -20,9 +20,6 @@
   "History": {
     "description": "Auto imported from components/History/History.vue"
   },
-  "Information": {
-    "description": "Auto imported from components/Information/Information.vue"
-  },
   "HomeAppLinks": {
     "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
   },
@@ -31,6 +28,9 @@
   },
   "HomeTheSideNav": {
     "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
+  },
+  "Information": {
+    "description": "Auto imported from components/Information/Information.vue"
   },
   "Instagram": {
     "description": "Auto imported from components/Instagram/Instagram.vue"
