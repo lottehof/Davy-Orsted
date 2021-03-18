@@ -31,8 +31,7 @@
             <textarea rows="8" name="message" cols="80" placeholder="Bericht"></textarea>
           </div>
           <div class="group">
-            <div data-netlify-recaptcha="true" ></div>
-            <recaptcha class="recaptcha" @error="onError" @success="onSuccess" @expired="onExpired" />
+            <div data-netlify-recaptcha="true"class="recaptcha" ></div>
           </div>
           <div class="group">
             <input class="form-button" type="submit" value="Versturen" />
@@ -49,29 +48,29 @@
 <script>
 export default {
   layout: 'headerbar',
-  methods: {
-    onError(error) {
-      console.log('Error happened:', error)
-    },
-    async onSubmit() {
-      try {
-        const token = await this.$recaptcha.getResponse()
-        console.log('ReCaptcha token:', token)
-        await this.$recaptcha.reset()
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.log('Login error:', error)
-      }
-    },
-    onSuccess(token) {
-      console.log('Succeeded:', token)
-      // here you submit the form
-      this.$refs.form.submit()
-    },
-    onExpired() {
-      console.log('Expired')
-    }
-  }
+  // methods: {
+  //   onError(error) {
+  //     console.log('Error happened:', error)
+  //   },
+  //   async onSubmit() {
+  //     try {
+  //       const token = await this.$recaptcha.getResponse()
+  //       console.log('ReCaptcha token:', token)
+  //       await this.$recaptcha.reset()
+  //     } catch (error) {
+  //       // eslint-disable-next-line no-console
+  //       console.log('Login error:', error)
+  //     }
+  //   },
+  //   onSuccess(token) {
+  //     console.log('Succeeded:', token)
+  //     // here you submit the form
+  //     this.$refs.form.submit()
+  //   },
+  //   onExpired() {
+  //     console.log('Expired')
+  //   }
+  // }
 }
 </script>
 
