@@ -16,8 +16,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Baskervville&display=swap'},
       { rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
-
-    ]
+    ],
+    script: [ { src: 'https://www.google.com/recaptcha/api.js', async: true, defer: true} ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
