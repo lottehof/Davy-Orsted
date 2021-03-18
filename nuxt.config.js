@@ -53,6 +53,7 @@ export default {
       cacheProvider: 'memory'
     }
   ],
+    '@nuxtjs/recaptcha',
     'bootstrap-vue/nuxt',
     ],
 
@@ -75,7 +76,12 @@ export default {
 
       }
     },
-
+    recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    siteKey: '6LcnSYQaAAAAAEsIat4dz6PTuGCyYpQF2JQ3vdFs', // Site key for requests
+    version: 3, // Version
+    size: 'invisible' // Size: 'compact', 'normal', 'invisible' (v2)
+  },
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
