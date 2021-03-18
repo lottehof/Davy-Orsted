@@ -19,37 +19,21 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form name="contact" action="" method="post" netlify>
+        <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
-            <input type="text" required placeholder="Voornaam">
-            <span class="highlight"></span>
-            <span class="bar"></span>
+            <input type="text" name="Naam" placeholder="Naam" required>
+          </div>
+          <div class="group">
+            <input type="text" placeholder="E-mail" required>
           </div>
 
           <div class="group">
-            <input type="text" required placeholder="Achternaam">
-            <span class="highlight"></span>
-            <span class="bar"></span>
+            <input type="text" placeholder="Telefoonnummer" required>
           </div>
           <div class="group">
-            <input type="text" required placeholder="E-mail">
-            <span class="highlight"></span>
-            <span class="bar"></span>
+            <textarea name="name" rows="8" cols="80" placeholder="Bericht" required></textarea>
           </div>
-
-          <div class="group">
-            <input type="text" required placeholder="Telefoonnummer">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-          </div>
-          <div class="group">
-            <textarea name="name" rows="8" cols="80" placeholder="Bericht"></textarea>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-          </div>
-          <div class="group">
-               <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" class="recaptcha" />
-          </div>
+          <div data-netlify-recaptcha="true"></div>
           <div class="group">
             <input class="form-button" type="submit" value="Versturen" />
           </div>
@@ -59,26 +43,20 @@
               <a href="https://policies.google.com/terms">Terms of Service</a> apply.
           </small>
         </form>
+        <form name="contact1" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  <p>
+    <label>Email: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
       </div>
-
     </section>
-    <!-- <div class="content">
-      <form name="contact" action="" method="post" netlify>
-        <label class="form-label" for="name">
-          Name:
-        </label>
-        <input class="form-field" name="name" id="name" />
-        <label class="form-label" for="email">
-          Email:
-        </label>
-        <input class="form-field" name="email" id="email" />
-        <label class="form-label" for="message">
-          Message:
-        </label>
-        <textarea class="form-field" name="message" id="message"></textarea>
-        <input class="form-button" type="submit" value="Send message" />
-      </form>
-    </div> -->
   </section>
 
 </template>
@@ -204,7 +182,7 @@ export default {
 .group 			  {
   /* position:relative; */
   margin-bottom:20px;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
