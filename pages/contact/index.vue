@@ -17,7 +17,7 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form method="post" name="contact" >
+        <form method="post" name="contact" data-netlify-recaptcha="true" data-netlify="true"  action="/thank-you">
           <div class="group">
             <input type="text" name="name" placeholder="Naam" >
           </div>
@@ -31,6 +31,7 @@
             <textarea rows="8" name="message" cols="80" placeholder="Bericht"></textarea>
           </div>
           <div class="group">
+            <div data-netlify-recaptcha="true" ></div>
             <recaptcha class="recaptcha" @error="onError" @success="onSuccess" @expired="onExpired" />
           </div>
           <div class="group">
