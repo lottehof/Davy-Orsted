@@ -19,18 +19,18 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form method="post" data-netlify-recaptcha="true" data-netlify="true">
+        <form method="post" name="contact" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
-            <input type="text" placeholder="Naam" required>
+            <input type="text" placeholder="Naam" >
           </div>
           <div class="group">
-            <input type="text" placeholder="E-mail" required>
+            <input type="text" placeholder="E-mail" >
           </div>
           <div class="group">
-            <input type="text"placeholder="Telefoonnummer" required>
+            <input type="text"placeholder="Telefoonnummer" >
           </div>
           <div class="group">
-            <textarea rows="8" cols="80" placeholder="Bericht" required></textarea>
+            <textarea rows="8" cols="80" placeholder="Bericht"></textarea>
           </div>
           <div class="group">
           <recaptcha class="recaptcha" @error="onError" @success="onSuccess" @expired="onExpired" />
