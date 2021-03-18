@@ -11,8 +11,8 @@
     </section>
     <section class="jachthaven-container">
       <div class="jachthaven-content">
-        <article>
-            <section class="jachthaven-content-article" v-html="$options.filters.markdown(story.content.content)"></section>
+        <article class="jachthaven-content-article">
+            <section  class="post-content" v-html="$options.filters.markdown(story.content.content)"></section>
         </article>
       </div>
       <div class="jachthaven-content">
@@ -125,8 +125,9 @@ export default {
   grid-template-columns: 1fr;
 }
 .jachthaven-content:nth-of-type(2){
-  height: 250px;
   width: 100%;
+  height: 100%;
+  position: relative;
 }
 .jachthaven-content-article{
   width: 95%;
@@ -154,10 +155,6 @@ export default {
     margin-bottom: 25px;
     padding: 0 1rem;
   }
-  .jachthaven-content:nth-of-type(2){
-    height: 400px;
-    width: 100%;
-  }
   .jachthaven-content-image{
     width: 100%;
     height: 100%;
@@ -178,26 +175,25 @@ export default {
   .jachthaven-content-article{
     padding: 0 18px;
     margin-left: 50px;
+    width: 550px;
   }
   .jachthaven-container{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .jachthaven-content:nth-of-type(1){
     grid-column: 1 / span 2;
+        width: 100%;
   }
   .jachthaven-content:nth-of-type(2){
     grid-column: 3 / span 3;
   }
   .jachthaven-content:nth-of-type(2){
-    height: auto;
+    height: 100%;
     width: 100%;
-  }
-  .jachthaven-content-article{
-    width: 550px;
   }
   .jachthaven-content-image{
     width: 90%;
-    height: 100%;
+    height: 600px;
     float: right;
   }
 }
