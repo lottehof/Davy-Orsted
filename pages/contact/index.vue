@@ -32,7 +32,8 @@
           <div class="group">
             <textarea name="message" rows="8" cols="80" placeholder="Bericht" required></textarea>
           </div>
-          <div data-netlify-recaptcha="true"></div>
+          <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" />
+
           <div class="group">
             <input class="form-button" type="submit" value="Versturen" />
           </div>

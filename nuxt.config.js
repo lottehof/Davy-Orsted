@@ -53,6 +53,7 @@ export default {
       cacheProvider: 'memory'
     }
   ],
+
     '@nuxtjs/recaptcha',
     'bootstrap-vue/nuxt',
     ],
@@ -78,8 +79,8 @@ export default {
     },
     recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
-    siteKey: '6LcnSYQaAAAAAEsIat4dz6PTuGCyYpQF2JQ3vdFs', // Site key for requests
-    version: 3, // Version
+    siteKey: '6LecVIQaAAAAAKkNfv0QQdiQfC8xELH871d-B1gi', // Site key for requests
+    version: 2, // Version
     size: 'invisible' // Size: 'compact', 'normal', 'invisible' (v2)
   },
 
