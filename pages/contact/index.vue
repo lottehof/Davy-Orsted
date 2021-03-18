@@ -19,66 +19,44 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <!-- <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
+        <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
-            <input type="text" name="Naam" placeholder="Naam" required>
+            <input type="text" name="name" placeholder="Naam" required>
           </div>
           <div class="group">
-            <input type="text" placeholder="E-mail" required>
-          </div>
-
-          <div class="group">
-            <input type="text" placeholder="Telefoonnummer" required>
+            <input type="text" name="email" placeholder="E-mail" required>
           </div>
           <div class="group">
-            <textarea name="name" rows="8" cols="80" placeholder="Bericht" required></textarea>
+            <input type="text"name="phoneNo" placeholder="Telefoonnummer" required>
+          </div>
+          <div class="group">
+            <textarea name="message" rows="8" cols="80" placeholder="Bericht" required></textarea>
           </div>
           <div data-netlify-recaptcha="true"></div>
           <div class="group">
             <input class="form-button" type="submit" value="Versturen" />
           </div>
 
-          <small>This site is protected by reCAPTCHA and the Google
+          <small><p class="small">This site is protected by reCAPTCHA and the Google
               <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-              <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+              <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
           </small>
+        </form>
+        <!-- <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form> -->
-        <!-- <form name="contact">
-      <p>
-        <label>Email: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <div data-netlify-recaptcha="true"></div>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form> -->
-    <form
-    ref="form"
-    method="POST" data-netlify-recaptcha="true" data-netlify="true"
-    @submit.prevent="onSubmit"
-  >
-    <fieldset>
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-      />
-      <input
-        type="email"
-        name="emil"
-        placeholder="Email"
-      />
-    </fieldset>
-    <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" />
-    <button
-      type="submit"
-    >
-      Submit Form
-    </button>
-  </form>
       </div>
     </section>
   </section>
@@ -89,28 +67,28 @@
 export default {
   layout: 'headerbar',
   methods: {
-     onError(error) {
-       console.log('Error happened:', error)
-     },
-     async onSubmit() {
-       try {
-         const token = await this.$recaptcha.getResponse()
-         console.log('ReCaptcha token:', token)
-         await this.$recaptcha.reset()
-       } catch (error) {
-         // eslint-disable-next-line no-console
-         console.log('Login error:', error)
-       }
-     },
-     onSuccess(token) {
-       console.log('Succeeded:', token)
-       // here you submit the form
-       this.$refs.form.submit()
-     },
-     onExpired() {
-       console.log('Expired')
-     }
-   }
+    onError(error) {
+      console.log('Error happened:', error)
+    },
+    async onSubmit() {
+      try {
+        const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+        await this.$recaptcha.reset()
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.log('Login error:', error)
+      }
+    },
+    onSuccess(token) {
+      console.log('Succeeded:', token)
+      // here you submit the form
+      this.$refs.form.submit()
+    },
+    onExpired() {
+      console.log('Expired')
+    }
+  }
 }
 </script>
 
@@ -155,7 +133,9 @@ export default {
   display: flex;
   justify-content: center;
   background-color: #4C565C;
-  height: 450px;
+}
+.container-content{
+  height: 80vh;
 }
 .davyOrsted{
   text-transform: uppercase;
@@ -175,6 +155,7 @@ export default {
   cursor: pointer;
   border: none;
 }
+
 
 .grey-contact-info{
   color: #97A0A7;
@@ -198,6 +179,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 50px;
 }
 .contact-title{
   font-size: 22px;
@@ -274,6 +256,11 @@ input, textarea{
   }
   input, textarea{
     width: 60%;
+  }
+  .small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }
