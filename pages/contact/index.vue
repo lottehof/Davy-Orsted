@@ -32,8 +32,9 @@
           <div class="group">
             <textarea name="message" rows="8" cols="80" placeholder="Bericht" required></textarea>
           </div>
-          <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" />
-
+          <div class="group">
+          <recaptcha class="recaptcha" @error="onError" @success="onSuccess" @expired="onExpired" />
+          </div>
           <div class="group">
             <input class="form-button" type="submit" value="Versturen" />
           </div>
@@ -43,21 +44,7 @@
               <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
           </small>
         </form>
-        <!-- <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
 
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form> -->
       </div>
     </section>
   </section>
@@ -194,8 +181,7 @@ export default {
   margin-right: auto;
 }
 .recaptcha{
-  margin: 0 auto;
-  width: 80%;
+
 }
 input, textarea{
   font-size:18px;
@@ -204,6 +190,14 @@ input, textarea{
   width: 100%;
   border:none;
   border-bottom:1px solid #ACADAF;
+  margin: 0 auto;
+}
+.recaptcha{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width: 100%;
+  border:none;
   margin: 0 auto;
 }
 
