@@ -53,7 +53,7 @@ export default {
       cacheProvider: 'memory'
     }
   ],
-    '@nuxtjs/recaptcha',
+    // '@nuxtjs/recaptcha',
     'bootstrap-vue/nuxt',
     ],
 
@@ -76,12 +76,12 @@ export default {
 
       }
     },
-    recaptcha: {
-    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
-    siteKey: '6Ld6MYQaAAAAAG5FcBmvFNgj8OpiyVEOCcoyvLeu', // Site key for requests
-    version: 2, // Version
-    size: 'invisible' // Size: 'compact', 'normal', 'invisible' (v2)
-  },
+  //   recaptcha: {
+  //   hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+  //   siteKey: '6Ld6MYQaAAAAAG5FcBmvFNgj8OpiyVEOCcoyvLeu', // Site key for requests
+  //   version: 2, // Version
+  //   size: 'invisible' // Size: 'compact', 'normal', 'invisible' (v2)
+  // },
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
