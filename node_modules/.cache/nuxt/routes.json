@@ -3,42 +3,49 @@
     "name": "contact",
     "path": "/contact",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/contact/index.vue",
-    "chunkName": "pages/contact/index"
+    "chunkName": "pages/contact/index",
+    "_name": "_7fba86b0"
   },
   {
     "name": "hand-made",
     "path": "/hand-made",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/hand-made/index.vue",
-    "chunkName": "pages/hand-made/index"
+    "chunkName": "pages/hand-made/index",
+    "_name": "_730a9143"
   },
   {
     "name": "jachthaven",
     "path": "/jachthaven",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/jachthaven/index.vue",
-    "chunkName": "pages/jachthaven/index"
+    "chunkName": "pages/jachthaven/index",
+    "_name": "_4509a8f4"
   },
   {
     "name": "nieuws",
     "path": "/nieuws",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/nieuws/index.vue",
-    "chunkName": "pages/nieuws/index"
+    "chunkName": "pages/nieuws/index",
+    "_name": "_35acc7e6"
   },
   {
     "name": "overons",
     "path": "/overons",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/overons/index.vue",
-    "chunkName": "pages/overons/index"
+    "chunkName": "pages/overons/index",
+    "_name": "_512373b0"
   },
   {
     "name": "nieuws-postId",
     "path": "/nieuws/:postId",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/nieuws/_postId/index.vue",
-    "chunkName": "pages/nieuws/_postId/index"
+    "chunkName": "pages/nieuws/_postId/index",
+    "_name": "_46a9d790"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_5ba0ea42"
   }
 ]

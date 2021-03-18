@@ -59,8 +59,29 @@
       </div>
 
     </section>
+    <div class="content">
+      <form name="contact" action="" method="post" netlify>
+        <input type="hidden" name="form-name" value="contact" />
+        <label class="form-label" for="name">
+          Name:
+        </label>
+        <input class="form-field" name="name" id="name" />
+        <label class="form-label" for="email">
+          Email:
+        </label>
+        <input class="form-field" name="email" id="email" />
+        <label class="form-label" for="message">
+          Message:
+        </label>
+        <textarea class="form-field" name="message" id="message"></textarea>
+        <input class="form-button" type="submit" value="Send message" />
+      </form>
+    </div>
 
-
+<small>This site is protected by reCAPTCHA and the Google
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+</small>
   </section>
 
 </template>
@@ -184,7 +205,7 @@ export default {
   margin-top: 20px;
 }
 .group 			  {
-  position:relative;
+  /* position:relative; */
   margin-bottom:20px;
   width: 100%;
   margin-left: auto;
@@ -198,13 +219,13 @@ input, textarea{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width: 80%;
+  width: 100%;
   border:none;
   border-bottom:1px solid #ACADAF;
   margin: 0 auto;
 }
 
-::placeholder				 {
+/* ::placeholder				 {
   color: #ACADAF;
   font-size:18px;
   position:absolute;
@@ -213,7 +234,7 @@ input, textarea{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 @media (min-width: 768px) {
   .contact-container{
