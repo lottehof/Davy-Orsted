@@ -5,10 +5,10 @@ export { default as Footer } from '../../components/Footer/Footer.vue'
 export { default as FooterMenu } from '../../components/Footer/FooterMenu.vue'
 export { default as HandMadeImageGrid } from '../../components/Hand-made/ImageGrid.vue'
 export { default as History } from '../../components/History/History.vue'
-export { default as Information } from '../../components/Information/Information.vue'
 export { default as HomeAppLinks } from '../../components/HomeMenu/HomeAppLinks.vue'
 export { default as HomeTheHeader } from '../../components/HomeMenu/HomeTheHeader.vue'
 export { default as HomeTheSideNav } from '../../components/HomeMenu/HomeTheSideNav.vue'
+export { default as Information } from '../../components/Information/Information.vue'
 export { default as Instagram } from '../../components/Instagram/Instagram.vue'
 export { default as MenuAppLinks } from '../../components/Menu/AppLinks.vue'
 export { default as MenuTheHeader } from '../../components/Menu/TheHeader.vue'
@@ -23,10 +23,10 @@ export const LazyFooter = import('../../components/Footer/Footer.vue' /* webpack
 export const LazyFooterMenu = import('../../components/Footer/FooterMenu.vue' /* webpackChunkName: "components/footer-menu" */).then(c => c.default || c)
 export const LazyHandMadeImageGrid = import('../../components/Hand-made/ImageGrid.vue' /* webpackChunkName: "components/hand-made-image-grid" */).then(c => c.default || c)
 export const LazyHistory = import('../../components/History/History.vue' /* webpackChunkName: "components/history" */).then(c => c.default || c)
-export const LazyInformation = import('../../components/Information/Information.vue' /* webpackChunkName: "components/information" */).then(c => c.default || c)
 export const LazyHomeAppLinks = import('../../components/HomeMenu/HomeAppLinks.vue' /* webpackChunkName: "components/home-app-links" */).then(c => c.default || c)
 export const LazyHomeTheHeader = import('../../components/HomeMenu/HomeTheHeader.vue' /* webpackChunkName: "components/home-the-header" */).then(c => c.default || c)
 export const LazyHomeTheSideNav = import('../../components/HomeMenu/HomeTheSideNav.vue' /* webpackChunkName: "components/home-the-side-nav" */).then(c => c.default || c)
+export const LazyInformation = import('../../components/Information/Information.vue' /* webpackChunkName: "components/information" */).then(c => c.default || c)
 export const LazyInstagram = import('../../components/Instagram/Instagram.vue' /* webpackChunkName: "components/instagram" */).then(c => c.default || c)
 export const LazyMenuAppLinks = import('../../components/Menu/AppLinks.vue' /* webpackChunkName: "components/menu-app-links" */).then(c => c.default || c)
 export const LazyMenuTheHeader = import('../../components/Menu/TheHeader.vue' /* webpackChunkName: "components/menu-the-header" */).then(c => c.default || c)

@@ -19,7 +19,7 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
+        <!-- <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
             <input type="text" name="Naam" placeholder="Naam" required>
           </div>
@@ -42,7 +42,7 @@
               <a href="https://policies.google.com/privacy">Privacy Policy</a> and
               <a href="https://policies.google.com/terms">Terms of Service</a> apply.
           </small>
-        </form>
+        </form> -->
         <form name="contact1" method="POST" data-netlify-recaptcha="true" data-netlify="true">
   <p>
     <label>Email: <input type="text" name="name" /></label>
