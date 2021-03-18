@@ -3,49 +3,49 @@
     <div class="modellen-header">
       <div class="model">
         <h1 class="head-title">Modellen</h1>
-          <h2 class="container-title">{{ typeOfBoatOne }}</h2>
+          <h2 class="container-title">{{ blok.type_of_boat_1 }}</h2>
       </div>
     </div>
     <div class="wrap">
       <div class="modellen-container">
 
         <div class="modellen-content">
-          <div class="figure">
-            <div class="modellen-image" :style="{backgroundImage: 'url(' + boatImageOne +')'}"></div>
-          </div>
+          <figure>
+            <img class="modellen-image" :src="blok.boat_image_one" alt="sleop D&O Raptor">
+          </figure>
         </div>
 
         <div class="modellen-content">
           <div class="modellen-title">
-            <h2 class="boat-title">{{ boatTitleOne }}</h2>
-              <h5 class="boat-sub-title">{{ boatSubtitleOne }}</h5>
+            <h2 class="boat-title">{{ blok.first_boat_title }}</h2>
+              <h5 class="boat-sub-title">{{ blok.boat_subtitle_1 }}</h5>
           </div>
           <ul>
-            <li class="list-items">{{ boatOneListItem1 }}</li>
-            <li class="list-items">{{ boatOneListItem2 }}</li>
-            <li class="list-items">{{ boatOneListItem3 }}</li>
-            <li class="list-items">{{ boatOneListItem4 }}</li>
-            <li class="list-items">{{ boatOneListItem5 }}</li>
+            <li class="list-items">{{ blok.boat_1_listItem_1 }}</li>
+            <li class="list-items">{{ blok.boat_1_listItem_2 }}</li>
+            <li class="list-items">{{ blok.boat_1_listItem_3 }}</li>
+            <li class="list-items">{{ blok.boat_1_listItem_4 }}</li>
+            <li class="list-items">{{ blok.boat_1_listItem_5 }}</li>
           </ul>
         </div>
 
         <div class="modellen-content">
-          <div class="figure">
-            <div class="modellen-image" :style="{backgroundImage: 'url(' + boatImageTwo +')'}"></div>
-          </div>
+          <figure>
+            <img class="modellen-image" :src="blok.boat_image_two" alt="sleop D&O Raptor">
+          </figure>
         </div>
 
         <div class="modellen-content">
           <div class="modellen-title">
-            <h2 class="boat-title">{{ boatTitleTwo }}</h2>
-              <h5 class="boat-sub-title">{{ boatSubtitleTwo }}</h5>
+            <h2 class="boat-title">{{ blok.second_boat_title }}</h2>
+              <h5 class="boat-sub-title">{{ blok.boat_subtitle_2 }}</h5>
           </div>
           <ul>
-            <li class="list-items">{{ boatTwoListItem1}}</li>
-            <li class="list-items">{{ boatTwoListItem2 }}</li>
-            <li class="list-items">{{ boatTwoListItem3 }}</li>
-            <li class="list-items">{{ boatTwoListItem4 }}</li>
-            <li class="list-items">{{ boatTwoListItem5 }}</li>
+            <li class="list-items">{{ blok.boat_2_listItem_1 }}</li>
+            <li class="list-items">{{ blok.boat_2_listItem_2 }}</li>
+            <li class="list-items">{{ blok.boat_2_listItem_3 }}</li>
+            <li class="list-items">{{ blok.boat_2_listItem_4 }}</li>
+            <li class="list-items">{{ blok.boat_2_listItem_5 }}</li>
           </ul>
         </div>
       </div>
@@ -56,57 +56,10 @@
 <script>
 export default {
   props: {
-    typeOfBoatOne: {
-      type: String
-    },
-    boatImageOne: {
-      type: String
-    },
-    boatTitleOne:{
-      type: String
-    },
-    boatSubtitleOne: {
-      type:String
-    },
-    boatOneListItem1:{
-      type: String
-    },
-    boatOneListItem2:{
-      type: String
-    },
-    boatOneListItem3:{
-      type: String
-    },
-    boatOneListItem4:{
-      type: String
-    },
-    boatOneListItem5:{
-      type: String
-    },
-    boatImageTwo: {
-      type: String
-    },
-    boatTitleTwo:{
-      type: String
-    },
-    boatSubtitleTwo: {
-      type: String
-    },
-    boatTwoListItem1:{
-      type: String
-    },
-    boatTwoListItem2:{
-      type: String
-    },
-    boatTwoListItem3:{
-      type: String
-    },
-    boatTwoListItem4:{
-      type: String
-    },
-    boatTwoListItem5:{
-      type: String
-    },
+    blok: {
+      type: Object,
+      required: true
+    }
   }
 }
 </script>
@@ -161,7 +114,7 @@ export default {
 .modellen-content:nth-of-type(4) {
   padding: 0 20px;
 }
-.figure{
+figure{
   margin: 0;
   padding: 0;
   height: 100%;

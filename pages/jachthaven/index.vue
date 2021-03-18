@@ -2,30 +2,28 @@
   <section>
     <div class="blok-one">
       <div class="container-top-border"><h4 class="title">Jachthaven</h4></div>
-      <div class="jachthaven-start-image"  :style="{backgroundImage: 'url(' + headerImage +')'}"></div>
+      <figure>
+        <img class="jachthaven-start-image" :src="story.content.header_image" alt="header image jachthaven">
+      </figure>
     </div>
     <section class="quote">
-      <h1 class="quote-text">{{ title }}</h1>
+      <h1 class="quote-text">{{ story.content.title }}</h1>
     </section>
     <section class="jachthaven-container">
       <div class="jachthaven-content">
-        <article class="jachthaven-content-article">
-          <p>{{ content }}</p>
+        <article>
+            <section class="jachthaven-content-article" v-html="$options.filters.markdown(story.content.content)"></section>
         </article>
       </div>
       <div class="jachthaven-content">
-        <div class="jachthaven-content-image" :style="{backgroundImage: 'url(' + image +')'}"></div>
+        <figure>
+          <img class="jachthaven-content-image" :src="story.content.image" alt="Jachthaven">
+        </figure>
       </div>
     </section>
     <Information
-    :imageBoxOne="imageBoxOne"
-    :imageBoxOneTitle="imageBoxOneTitle"
-    :imageBoxTwo="imageBoxTwo"
-    :imageBoxTwoTitle="imageBoxTwoTitle"
-    :imageBoxThree="imageBoxThree"
-    :imageBoxThreeTitle="imageBoxThreeTitle"
-    :imageBoxFour="imageBoxFour"
-    :imageBoxFourTitle="imageBoxFourTitle" />
+      :key="story.content._id"
+      :blok="story.content" />
     <Instagram />
   </section>
 </template>
@@ -39,35 +37,51 @@ export default {
     Information,
     Instagram,
   },
+
 /*CONNECTOR TO CMS STORYBLOK*/
 /*--------------------------*/
-  asyncData(context){
-    return context.app.$storyapi.get('cdn/stories/jachthaven', {
-      version: process.env.NODE_ENV == "production" ? "published" : 'draft',
-    }).then(res => {
-      return{
-      title: res.data.story.content.title,
-      content: res.data.story.content.content,
-      image: res.data.story.content.image,
-      headerImage: res.data.story.content.header_image,
-      imageBoxOne: res.data.story.content.image_box_1,
-      imageBoxOneTitle: res.data.story.content.image_box_1_title,
-      imageBoxTwo: res.data.story.content.image_box_2,
-      imageBoxTwoTitle: res.data.story.content.image_box_2_title,
-      imageBoxThree: res.data.story.content.image_box_3,
-      imageBoxThreeTitle: res.data.story.content.image_box_3_title,
-      imageBoxFour: res.data.story.content.image_box_4,
-      imageBoxFourTitle: res.data.story.content.image_box_4_title,
+  data () {
+    return {
+      story: { content: {} }
+    }
+  },
+  mounted () {
+    // Use the input event for instant update of content
+    this.$storybridge.on('input', (event) => {
+      if (event.story.id === this.story.id) {
+        this.story.content = event.story.content
       }
     })
+    // Use the bridge to listen the events
+    this.$storybridge.on(['published', 'change'], (event) => {
+      // window.location.reload()
+      this.$nuxt.$router.go({
+        path: this.$nuxt.$router.currentRoute,
+        force: true,
+      })
+    })
   },
+  asyncData (context){
+    //load the JSOn from the API - loading the home content (index page)
+    return context.app.$storyapi.get('cdn/stories/jachthaven', {
+      version: process.env.NODE_ENV == "production" ? "published" : 'draft',
+    }).then((res) => {
+      return res.data
+    }).catch((res) => {
+      if (!res.response){
+        console.error(res)
+        context.error({ statusCode: 404, message: 'Failed to receive content from api'})
+      } else {
+        console.error(res.resonse.data)
+        context.error({ statusCode: res.response.status, message: res.response.data })
+      }
+    })
+  }
 }
 </script>
 
 <style lang="css" scoped>
-p{
-  margin: 10px;
-}
+
 .container-top-border{
   width: 100vw;
   height: 35px;
@@ -115,10 +129,11 @@ p{
   width: 100%;
 }
 .jachthaven-content-article{
-  width: 100%;
+  width: 95%;
   height: auto;
   margin-bottom: 20px;
   opacity: 60%;
+  margin: 10px;
 }
 .jachthaven-content-image{
   width: 100%;
@@ -126,7 +141,7 @@ p{
   background-position: center;
   background-size: cover;
 }
-.jachthaven-content-article p{
+.jachthaven-content-article{
   white-space: pre-line;
 }
 /*MEDIA QUERIES*/
@@ -177,7 +192,7 @@ p{
     height: auto;
     width: 100%;
   }
-  .jachthaven-content-article p{
+  .jachthaven-content-article{
     width: 550px;
   }
   .jachthaven-content-image{

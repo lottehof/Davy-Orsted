@@ -6,7 +6,7 @@
     <h1 class="post-title">{{ story.content.title }}</h1>
     <div class="post-container">
       <p class="post-preview-summary">{{story.content.summary}}</p>
-      <img :src="story.content.image" alt="boat" class="post-thumbnail">
+      <img :src="story.content.image" alt="Nieuwsbrief post" class="post-thumbnail">
     </div>
     <section class="post-content" v-html="$options.filters.markdown(story.content.content)"></section>
     <section class="slider">
@@ -90,7 +90,10 @@ export default {
   height: 200px;
   background-size: cover;
   background-position: center;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .post-preview-summary{
   line-height: 2.3;

@@ -1,20 +1,28 @@
 <template lang="html">
-  <div class="information-boxes">
+  <div class="information-boxes" v-editable="blok">
     <div class="information-box-content">
-      <div class="content-image" :style="{backgroundImage: 'url(' + imageBoxOne +')'}"></div>
-      <h3>{{ imageBoxOneTitle }}</h3>
+        <figure>
+          <img :src="blok.image_box_1" class="content-image" alt="Nieuws">
+        </figure>
+      <h3>{{ blok.image_box_1_title }}</h3>
     </div>
     <div class="information-box-content">
-      <div class="content-image" :style="{backgroundImage: 'url(' + imageBoxTwo + ')'}"></div>
-        <h3>{{ imageBoxTwoTitle }}</h3>
+        <figure>
+          <img :src="blok.image_box_2" class="content-image" alt="Winterstalling Davy&Orsted">
+        </figure>
+        <h3>{{ blok.image_box_2_title }}</h3>
     </div>
     <div class="information-box-content">
-      <div class="content-image" :style="{backgroundImage: 'url(' + imageBoxThree +')'}"></div>
-      <h3>{{ imageBoxThreeTitle }}</h3>
+        <figure>
+          <img :src="blok.image_box_3" class="content-image" alt="Occasions Davy&Orsted">
+        </figure>
+      <h3>{{ blok.image_box_3_title }}</h3>
     </div>
     <div class="information-box-content">
-      <div class="content-image"  :style="{backgroundImage: 'url(' + imageBoxFour +')'}"></div>
-      <h3>{{ imageBoxFourTitle }}</h3>
+        <figure>
+          <img :src="blok.image_box_4" class="content-image" alt="De werf">
+        </figure>
+      <h3>{{ blok.image_box_4_title }}</h3>
     </div>
   </div>
 </template>
@@ -22,38 +30,10 @@
 <script>
 export default {
   props: {
-    imageBoxOne: {
-      type: String,
+    blok: {
+      type: Object,
       required: true
-    },
-    imageBoxOneTitle: {
-      type: String,
-      required: true
-    },
-    imageBoxTwo: {
-      type: String,
-      required: true,
-    },
-    imageBoxTwoTitle: {
-      type: String,
-      required: true
-    },
-    imageBoxThree: {
-      type: String,
-      required: true,
-    },
-    imageBoxThreeTitle: {
-      type: String,
-      required: true
-    },
-    imageBoxFour: {
-      type: String,
-      required: true,
-    },
-    imageBoxFourTitle: {
-      type: String,
-      required: true
-    },
+    }
   }
 }
 </script>

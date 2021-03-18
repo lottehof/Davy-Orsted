@@ -2,7 +2,6 @@
   <section class="nieuwsbrief">
     <div class="blok">
       <div class="container-top-border"><h4 class="nav-title">Nieuws</h4></div>
-      <img src="@/assets/img/14.jpeg" alt="logo" class="nieuwsbrief-start-image">
     </div>
     <div class="nieuwsbrief-container">
       <h1 class="nieuwsbrief-container-title">D&Ø Magazine</h1>
@@ -58,21 +57,15 @@ export default {
 
 .container-top-border{
   width: 100vw;
-  height: 35px;
+  height: 45px;
   background-color: #3E4B51;
 }
 .nav-title{
-  height: 35px;
+  height: 45px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.nieuwsbrief-start-image{
-  width: 100vw;
-  height: 60vh;
-  background-size: contain;
-  background-position: center;
 }
 .nieuwsbrief-container-title{
   font-size: 36px;
@@ -88,10 +81,9 @@ export default {
   justify-content: center;
 }
 .nieuwsbrief-container-content{
-  width: 70%;
+  width: 90%;
   height: auto;
   font-size: 16px;
-  /* opacity: 60%; */
   padding:20px;
   text-align: center;
 }

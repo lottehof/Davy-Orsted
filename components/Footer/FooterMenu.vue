@@ -27,9 +27,9 @@
             <h4 class="title">Algemeen</h4>
           </div>
           <ul>
-            <li><a href="#">Werf</a></li>
+            <li><a href="/jachthaven">Werf</a></li>
             <li><a href="#">Occasions</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="#">Other things</a></li>
           </ul>
         </div>
@@ -60,10 +60,10 @@
             <h4 class="title">Contact</h4>
           </div>
           <ul>
-            <li><a href="#">+31(6)53244451</a></li>
-            <li><a href="#">info@davy-orsted.nl</a></li>
-            <li><a href="#">Davy 	&amp; Orsted</a></li>
-            <li><a href="#">Boeierspad 24, 1081 KE Amsterdam Netherlands</a></li>
+            <li><a href="tel://+31653244451">+31(6)53244451</a></li>
+            <li><a onclick="window.location.href='mailto:info@davy-orsted.nl'">info@davy-orsted.nl</a></li>
+            <li><a onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">Davy 	&amp; Orsted</a></li>
+            <li><a onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">Boeierspad 24, 1081 KE Amsterdam Netherlands</a></li>
           </ul>
         </div>
       </div>
@@ -81,9 +81,9 @@
 
       <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Algemeen</button>
       <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">Werf</a><br>
+        <a class="FooterMenu-link" href="/jachthaven">Werf</a><br>
         <a class="FooterMenu-link" href="#">Occasions</a><br>
-        <a class="FooterMenu-link" href="#">Contact</a><br>
+        <a class="FooterMenu-link" href="/contact">Contact</a><br>
         <a class="FooterMenu-link" href="#">Other things</a><br><br>
       </div>
       <hr>
@@ -108,10 +108,10 @@
 
       <button @click="isOpenContact = !isOpenContact" class="FooterMenu-title">Contact</button>
       <div v-if="isOpenContact" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">+31(6)53244451</a><br>
-        <a class="FooterMenu-link" href="#">info@davy-orsted.nl</a><br>
-        <a class="FooterMenu-link" href="#">Davy &amp; Orsted</a><br>
-        <a class="FooterMenu-link" href="#">Boeierspad 24, 1081 KE Amsterdam Netherlands</a><br><br>
+        <a class="FooterMenu-link" href="tel://+31653244451">+31(6)53244451</a><br>
+        <a class="FooterMenu-link" onclick="window.location.href='mailto:info@davy-orsted.nl'">info@davy-orsted.nl</a><br>
+        <a class="FooterMenu-link" onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">Davy &amp; Orsted</a><br>
+        <a class="FooterMenu-link" onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">Boeierspad 24, 1081 KE Amsterdam Netherlands</a><br><br>
       </div>
       <hr>
     </div>

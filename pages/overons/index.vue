@@ -85,7 +85,7 @@ export default {
   height: auto;
 }
 .title{
-  height: 35px;
+  height: 45px;
   color: white;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ export default {
 }
 .container-top-border{
   width: 100vw;
-  height: 35px;
+  height: 45px;
   background-color: #3E4B51;
 }
 .blok-one,
@@ -117,22 +117,13 @@ export default {
   background-size: cover;
   background-position: center;
 }
-.quote{
-  /* margin-bottom: 15px; */
-  width: 100vw;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.quote,
 .quote-second{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
-  margin-top: 35px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   width: 90%;
   height: auto;
   margin-left: auto;
@@ -140,7 +131,6 @@ export default {
 }
 .quote-text,
 .quote-text-second{
-  /* height: 82px; */
   font-size: 20px;
   text-align: center;
   color: #3e4b51;

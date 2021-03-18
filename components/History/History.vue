@@ -1,17 +1,18 @@
 <template lang="html">
   <div class="history">
     <div class="quote">
-      <h1 class="quote-text">{{ title }}</h1>
+      <h1 class="quote-text">{{ blok.title }}</h1>
     </div>
-
     <div class="history-container">
       <div class="history-content">
-        <div class="history-image" :style="{backgroundImage: 'url(' + image +')'}"></div>
+          <figure>
+            <img class="history-image" :src="blok.image" alt="jachthaven Davy&Orsted">
+          </figure>
       </div>
 
       <div class="history-content">
         <div class="history-text">
-          <p>{{ content }}
+          <p>{{ blok.content }}
             <a href="/overons">LEES MEER ></a>
           </p>
         </div>
@@ -23,16 +24,8 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      required: true
-    },
-    content: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
+    blok: {
+      type: Object,
       required: true
     }
   }

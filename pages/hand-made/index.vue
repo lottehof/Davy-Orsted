@@ -122,24 +122,26 @@ export default {
 }
 .container-top-border{
   width: 100vw;
-  height: 35px;
+  height: 45px;
   background-color: #3E4B51;
 }
 .title{
-  height: 35px;
+  height: 45px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .quote{
-  width: 100vw;
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 90%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .quote-text{
   font-size: 20px;
