@@ -19,7 +19,7 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form>
+        <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
             <input type="text" required placeholder="Voornaam">
             <span class="highlight"></span>

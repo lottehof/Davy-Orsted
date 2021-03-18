@@ -1,0 +1,25 @@
+# Discovered Components
+
+This is an auto-generated list of components discovered by [nuxt/components](https://github.com/nuxt/components).
+
+You can directly use them in pages and other components without the need to import them.
+
+**Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
+
+- `<Post>` | `<post>` (components/Post.vue)
+- `<Slide>` | `<slide>` (components/Slide.vue)
+- `<BlogPostPreview>` | `<blog-post-preview>` (components/Blog/PostPreview.vue)
+- `<History>` | `<history>` (components/History/History.vue)
+- `<HandMadeImageGrid>` | `<hand-made-image-grid>` (components/Hand-made/ImageGrid.vue)
+- `<Footer>` | `<footer>` (components/Footer/Footer.vue)
+- `<FooterMenu>` | `<footer-menu>` (components/Footer/FooterMenu.vue)
+- `<HomeAppLinks>` | `<home-app-links>` (components/HomeMenu/HomeAppLinks.vue)
+- `<HomeTheHeader>` | `<home-the-header>` (components/HomeMenu/HomeTheHeader.vue)
+- `<HomeTheSideNav>` | `<home-the-side-nav>` (components/HomeMenu/HomeTheSideNav.vue)
+- `<Information>` | `<information>` (components/Information/Information.vue)
+- `<Instagram>` | `<instagram>` (components/Instagram/Instagram.vue)
+- `<MenuAppLinks>` | `<menu-app-links>` (components/Menu/AppLinks.vue)
+- `<MenuTheHeader>` | `<menu-the-header>` (components/Menu/TheHeader.vue)
+- `<MenuTheSideNav>` | `<menu-the-side-nav>` (components/Menu/TheSideNav.vue)
+- `<ModellenAluSloepen>` | `<modellen-alu-sloepen>` (components/Modellen/AluSloepen.vue)
+- `<ModellenAluSportboot>` | `<modellen-alu-sportboot>` (components/Modellen/AluSportboot.vue)
