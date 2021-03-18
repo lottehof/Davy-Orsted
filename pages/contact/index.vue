@@ -21,16 +21,16 @@
         <h2 class="contact-title">Contact ons</h2>
         <form method="post" name="contact" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
-            <input type="text" placeholder="Naam" >
+            <input type="text" name="name" placeholder="Naam" >
           </div>
           <div class="group">
-            <input type="text" placeholder="E-mail" >
+            <input type="text" name="email" placeholder="E-mail" >
           </div>
           <div class="group">
-            <input type="text"placeholder="Telefoonnummer" >
+            <input type="text" name="phoneNO" placeholder="Telefoonnummer" >
           </div>
           <div class="group">
-            <textarea rows="8" cols="80" placeholder="Bericht"></textarea>
+            <textarea rows="8" name="message" cols="80" placeholder="Bericht"></textarea>
           </div>
           <div class="group">
           <recaptcha class="recaptcha" @error="onError" @success="onSuccess" @expired="onExpired" />
