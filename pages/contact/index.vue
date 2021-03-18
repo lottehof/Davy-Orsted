@@ -19,9 +19,9 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form name="contact" action="" method="post" data-netlify-recaptcha="true" data-netlify="true">
+        <form name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
           <div class="group">
-            <input type="text" name="name" placeholder="Naam" required>
+            <input type="text" name="naam" placeholder="Naam" required>
           </div>
           <div class="group">
             <input type="text" name="email" placeholder="E-mail" required>
@@ -168,6 +168,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   margin-top: 50px;
+
 }
 .contact-title{
   font-size: 22px;
