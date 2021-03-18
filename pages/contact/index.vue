@@ -19,7 +19,7 @@
       </div>
       <div class="container-content">
         <h2 class="contact-title">Contact ons</h2>
-        <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <form name="contact" action="" method="post" netlify>
           <div class="group">
             <input type="text" required placeholder="Voornaam">
             <span class="highlight"></span>
@@ -51,17 +51,19 @@
                <recaptcha @error="onError" @success="onSuccess" @expired="onExpired" class="recaptcha" />
           </div>
           <div class="group">
-            <button class="form-button" type="submit">
-              Versturen
-            </button>
+            <input class="form-button" type="submit" value="Versturen" />
           </div>
+
+          <small>This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+              <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </small>
         </form>
       </div>
 
     </section>
-    <div class="content">
+    <!-- <div class="content">
       <form name="contact" action="" method="post" netlify>
-        <input type="hidden" name="form-name" value="contact" />
         <label class="form-label" for="name">
           Name:
         </label>
@@ -76,12 +78,7 @@
         <textarea class="form-field" name="message" id="message"></textarea>
         <input class="form-button" type="submit" value="Send message" />
       </form>
-    </div>
-
-<small>This site is protected by reCAPTCHA and the Google
-    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-</small>
+    </div> -->
   </section>
 
 </template>
