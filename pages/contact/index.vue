@@ -39,9 +39,7 @@
             <input class="form-button" type="submit" value="Versturen" />
           </div>
 
-          <small><p class="small">This site is protected by reCAPTCHA and the Google
-              <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-              <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+          <small><p class="small">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
           </small>
         </form>
 
@@ -96,6 +94,9 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.contact-container{
+  height: 100%;
 }
 .content-box{
   display: flex;
@@ -167,7 +168,8 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 50px;
+  position: relative;
+  height: auto;
 
 }
 .contact-title{
@@ -181,9 +183,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-.recaptcha{
 
-}
 input, textarea{
   font-size:18px;
   padding:10px 10px 10px 5px;
@@ -201,17 +201,10 @@ input, textarea{
   border:none;
   margin: 0 auto;
 }
-
-/* ::placeholder				 {
-  color: #ACADAF;
-  font-size:18px;
-  position:absolute;
-  pointer-events:none;
-  line-height: 1.78;
+.small{
+  margin: 0 auto;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-} */
+}
 
 @media (min-width: 768px) {
   .contact-container{
@@ -254,9 +247,7 @@ input, textarea{
     width: 60%;
   }
   .small{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    float: right;
   }
 
 }
