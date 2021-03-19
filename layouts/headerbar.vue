@@ -45,6 +45,14 @@ export default {
 
 /*MEDIA QUERIES*/
 /*-------------------*/
+@media (min-width: 500px) {
+  .header{
+    height: 60px;
+  }
+  .header-logo{
+    width: 35%;
+  }
+}
 @media (min-width: 768px) {
   .header{
     height: 60px;

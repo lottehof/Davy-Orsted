@@ -48,29 +48,6 @@
 <script>
 export default {
   layout: 'headerbar',
-  // methods: {
-  //   onError(error) {
-  //     console.log('Error happened:', error)
-  //   },
-  //   async onSubmit() {
-  //     try {
-  //       const token = await this.$recaptcha.getResponse()
-  //       console.log('ReCaptcha token:', token)
-  //       await this.$recaptcha.reset()
-  //     } catch (error) {
-  //       // eslint-disable-next-line no-console
-  //       console.log('Login error:', error)
-  //     }
-  //   },
-  //   onSuccess(token) {
-  //     console.log('Succeeded:', token)
-  //     // here you submit the form
-  //     this.$refs.form.submit()
-  //   },
-  //   onExpired() {
-  //     console.log('Expired')
-  //   }
-  // }
 }
 </script>
 
@@ -209,14 +186,17 @@ input, textarea{
     font-size: 26px;
   }
 }
-
-@media (min-width: 1390px) {
+@media (min-width: 900px) {
   .container-top-border{
     height: 55px;
   }
   .blok-title{
     height: 55px;
   }
+}
+
+@media (min-width: 1390px) {
+
   .container-title{
     font-size: 32px;
   }

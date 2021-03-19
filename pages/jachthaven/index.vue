@@ -12,7 +12,7 @@
     <section class="jachthaven-container">
       <div class="jachthaven-content">
         <article class="jachthaven-content-article">
-            <section  class="post-content" v-html="$options.filters.markdown(story.content.content)"></section>
+            <section class="post-content" v-html="$options.filters.markdown(story.content.jachthaven_content)"></section>
         </article>
       </div>
       <div class="jachthaven-content">
