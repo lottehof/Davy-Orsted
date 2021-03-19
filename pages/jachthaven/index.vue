@@ -12,7 +12,7 @@
     <section class="jachthaven-container">
       <div class="jachthaven-content">
         <article class="jachthaven-content-article">
-            <section class="post-content" v-html="$options.filters.markdown(story.content.jachthaven_content)"></section>
+            <section class="post-content" v-html="$options.filters.markdown(story.content.content)"></section>
         </article>
       </div>
       <div class="jachthaven-content">
@@ -81,6 +81,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+p{display: block;}
 
 .container-top-border{
   width: 100vw;

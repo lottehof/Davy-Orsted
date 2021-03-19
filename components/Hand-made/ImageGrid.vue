@@ -2,37 +2,37 @@
   <div class="image-grid">
     <div class="image-content">
       <figure>
-      <img src="@/assets/img/3b.jpeg" alt="">
+      <img src="@/assets/img/3b.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-      <img src="@/assets/img/3a.jpeg" alt="">
+      <img src="@/assets/img/3a.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-      <img src="@/assets/img/7.jpeg" alt="">
+      <img src="@/assets/img/7.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-      <img src="@/assets/img/6.jpeg" alt="">
+      <img src="@/assets/img/6.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-        <img src="@/assets/img/4.jpeg" alt="">
+        <img src="@/assets/img/4.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-        <img src="@/assets/img/8a.jpeg" alt="">
+        <img src="@/assets/img/8a.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
     <div class="image-content">
       <figure>
-        <img src="@/assets/img/8c.jpeg" alt="">
+        <img src="@/assets/img/8c.jpeg" alt="Image grid van het maken van de boten van Davy&Orsted">
       </figure>
     </div>
   </div>

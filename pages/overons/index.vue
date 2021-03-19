@@ -2,7 +2,7 @@
   <section class="overOns">
     <div class="blok">
       <div class="container-top-border"><h4 class="title">Over ons</h4></div>
-      <img src="@/assets/img/14.jpeg" alt="logo" class="overons-start-image">
+      <img :src="story.content.header_image" alt="logo" class="overons-start-image">
     </div>
     <section class="quote">
       <h1 class="quote-text">{{ story.content.quote }}</h1>
