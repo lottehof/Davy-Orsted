@@ -53,7 +53,7 @@ export default {
   padding: 0 20px;
   color: #3E4B51;
   padding-top: 30px;
-  opacity: 60%;
+  /* opacity: 60%; */
   margin-bottom: 50px;
 }
 .post-preview-thumbnail {
@@ -67,7 +67,7 @@ export default {
   height: auto;
   padding: 0 20px;
   margin-top: 20px;
-  opacity: 60%;
+  /* opacity: 60%; */
 }
 .post-preview-text-button{
   width: 100%;
@@ -77,7 +77,7 @@ export default {
   color: #3E4B51;
   text-transform: uppercase;
   text-decoration: underline;
-  opacity: 60%;
+  /* opacity: 60%; */
 }
 .post-preview-text-button:hover{
   color: black;

@@ -134,7 +134,7 @@ p{display: block;}
   width: 95%;
   height: auto;
   margin-bottom: 20px;
-  opacity: 60%;
+  /* opacity: 60%; */
   margin: 10px;
 }
 .jachthaven-content-image{

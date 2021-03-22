@@ -37,10 +37,60 @@
               <li><a href="#">Aanbod onderdelen en occasions</a></li>
             </ul>
          </div>
+         <div class="col_4">
+           <div>
+             <h3 class="title">Jachthaven</h3>
+           </div>
+           <ul>
+              <li><a href="/jachthaven">Over de werf</a></li>
+              <li><a href="#">Onderhoud</a></li>
+              <li><a href="#">Winterstalling</a></li>
+              <li><a href="#">D&O Shop</a></li>
+              <li><a href="#">Aanbod onderdelen en occasions</a></li>
+            </ul>
+         </div>       <div class="col_4">
+                  <div>
+                    <h3 class="title">Jachthaven</h3>
+                  </div>
+                  <ul>
+                     <li><a href="/jachthaven">Over de werf</a></li>
+                     <li><a href="#">Onderhoud</a></li>
+                     <li><a href="#">Winterstalling</a></li>
+                     <li><a href="#">D&O Shop</a></li>
+                     <li><a href="#">Aanbod onderdelen en occasions</a></li>
+                   </ul>
+                </div>
          <div class="col_5">
            <img src="@/assets/img/14.jpeg" alt="haven" class="nav-image">
         </div>
       </div>
+    </div>
+
+    <div class="mobile-container">
+      <div class="mobile-menu">
+      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="MobileMenu-title">Over ons</button>
+      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
+        <a class="FooterMenu-link" href="/jachthaven">Wie wij zijn</a><br>
+        <a class="FooterMenu-link" href="#">Hand-made</a><br>
+      </div>
+      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Boten</button>
+      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
+        <a class="FooterMenu-link" href="#">Sloep Raptor</a><br>
+        <a class="FooterMenu-link" href="#">Sloep Crafter</a><br>
+        <a class="FooterMenu-link" href="">Sportboot Marshal</a><br>
+        <a class="FooterMenu-link" href="#">Sportboot Moonraker</a><br>
+      </div>
+      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Jachthaven</button>
+      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
+        <a class="FooterMenu-link" href="#">De werf</a><br>
+        <a class="FooterMenu-link" href="#">Winterstalling</a><br>
+        <a class="FooterMenu-link" href="">Onderhoud</a><br>
+      </div>
+      <button class="FooterMenu-title">Nieuws</button>
+      <button class="FooterMenu-title">Occasions</button>
+      <button class="FooterMenu-title">Contact</button>
+
+    </div>
     </div>
   </div>
 </template>
@@ -49,6 +99,10 @@
 *{
   list-style: none;
 }
+.mobile-menu{
+  width: 100%;
+  height: 100vh;
+}
 .nav-image{
   width: 90%;
   height: auto;
@@ -56,6 +110,9 @@
 }
 .footer-menu{
   margin: 0 auto;
+}
+.footer-menu-container{
+  display: none;
 }
 .footer-menu-container .footer-menu .title {
  height: 40px;
@@ -79,12 +136,18 @@ ul li{
   color: white;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   li a{
     display: block;
   }
   .footer-menu-container .footer-menu .title {
    margin-top: 0px;
+  }
+  .footer-menu-container{
+    display: block;
+  }
+  .mobile-container{
+    display: none;
   }
   .nav-image{
     width: 300px;

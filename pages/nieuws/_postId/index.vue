@@ -104,7 +104,7 @@ export default {
   width: 90%;
   height: auto;
   margin-bottom: 20px;
-  opacity: 60%;
+  /* opacity: 60%; */
 }
 .post-content {
   margin-top: 20px;

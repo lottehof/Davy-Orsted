@@ -8,9 +8,6 @@
   "BlogPostPreview": {
     "description": "Auto imported from components/Blog/PostPreview.vue"
   },
-  "HandMadeImageGrid": {
-    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
-  },
   "Footer": {
     "description": "Auto imported from components/Footer/Footer.vue"
   },
@@ -19,6 +16,9 @@
   },
   "History": {
     "description": "Auto imported from components/History/History.vue"
+  },
+  "HandMadeImageGrid": {
+    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
   },
   "HomeAppLinks": {
     "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
@@ -32,9 +32,6 @@
   "Instagram": {
     "description": "Auto imported from components/Instagram/Instagram.vue"
   },
-  "Information": {
-    "description": "Auto imported from components/Information/Information.vue"
-  },
   "MenuAppLinks": {
     "description": "Auto imported from components/Menu/AppLinks.vue"
   },
@@ -43,6 +40,9 @@
   },
   "MenuTheSideNav": {
     "description": "Auto imported from components/Menu/TheSideNav.vue"
+  },
+  "Information": {
+    "description": "Auto imported from components/Information/Information.vue"
   },
   "ModellenAluSloepen": {
     "description": "Auto imported from components/Modellen/AluSloepen.vue"
