@@ -211,24 +211,6 @@ li:before{
   .boat-title{
     font-size: 22px;
   }
-}
-
-@media (min-width: 1300px) {
-  .modellen-header{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .model{
-    width: 100%;
-    text-align: center;
-  }
-  .container-title{
-    font-size: 24px;
-    margin-bottom: 77px;
-    margin-top: 77px;
-  }
   .wrap{
     display: flex;
     align-items: center;
@@ -259,6 +241,29 @@ li:before{
     margin-bottom: 0px;
     margin-top: 20px;
   }
+  .boat-sub-title,
+  .list-items {
+    display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .modellen-header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .model{
+    width: 100%;
+    text-align: center;
+  }
+  .container-title{
+    font-size: 24px;
+    margin-bottom: 77px;
+    margin-top: 77px;
+  }
+
   .modellen-title{
     display: flex;
     justify-content: left;
@@ -285,10 +290,6 @@ li:before{
   .boat-sub-title{
     width: 175px;
     margin-top: 43px;
-  }
-  .boat-sub-title,
-  .list-items {
-    display: block;
   }
   .list-items{
     font-size: 14px;

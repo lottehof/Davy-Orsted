@@ -127,6 +127,7 @@ a{
   }
   .history-text{
     padding: 32px 40px 40px 63px;
+    width: 600px;
   }
   .history-image{
     width: 100%;

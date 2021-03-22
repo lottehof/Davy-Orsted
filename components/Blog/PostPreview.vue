@@ -81,7 +81,7 @@ export default {
 }
 .post-preview-text-button:hover{
   color: black;
-  opacity: 100%;
+  /* opacity: 100%; */
 }
 
 hr{

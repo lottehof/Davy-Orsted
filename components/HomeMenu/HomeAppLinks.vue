@@ -31,35 +31,12 @@
            </div>
            <ul>
               <li><a href="/jachthaven">Over de werf</a></li>
-              <li><a href="#">Onderhoud</a></li>
-              <li><a href="#">Winterstalling</a></li>
-              <li><a href="#">D&O Shop</a></li>
-              <li><a href="#">Aanbod onderdelen en occasions</a></li>
+              <li><a href="/jachthaven#">Onderhoud</a></li>
+              <li><a href="/jachthaven#">Winterstalling</a></li>
+              <li><a href="/jachthaven#">D&O Shop</a></li>
+              <li><a href="/jachthaven#">Aanbod onderdelen en occasions</a></li>
             </ul>
          </div>
-         <div class="col_4">
-           <div>
-             <h3 class="title">Jachthaven</h3>
-           </div>
-           <ul>
-              <li><a href="/jachthaven">Over de werf</a></li>
-              <li><a href="#">Onderhoud</a></li>
-              <li><a href="#">Winterstalling</a></li>
-              <li><a href="#">D&O Shop</a></li>
-              <li><a href="#">Aanbod onderdelen en occasions</a></li>
-            </ul>
-         </div>       <div class="col_4">
-                  <div>
-                    <h3 class="title">Jachthaven</h3>
-                  </div>
-                  <ul>
-                     <li><a href="/jachthaven">Over de werf</a></li>
-                     <li><a href="#">Onderhoud</a></li>
-                     <li><a href="#">Winterstalling</a></li>
-                     <li><a href="#">D&O Shop</a></li>
-                     <li><a href="#">Aanbod onderdelen en occasions</a></li>
-                   </ul>
-                </div>
          <div class="col_5">
            <img src="@/assets/img/14.jpeg" alt="haven" class="nav-image">
         </div>
@@ -68,46 +45,126 @@
 
     <div class="mobile-container">
       <div class="mobile-menu">
-      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="MobileMenu-title">Over ons</button>
-      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="/jachthaven">Wie wij zijn</a><br>
-        <a class="FooterMenu-link" href="#">Hand-made</a><br>
+      <button @click="isOpenOverOns = !isOpenOverOns" class="MobileMenu-title one">Over ons</button>
+      <div v-if="isOpenOverOns" class="FooterMenu-box">
+        <a class="MobileMenu-link" href="/overons">Wie wij zijn</a><br>
+        <a class="MobileMenu-link" href="/hand-made">Hand-made</a><br>
       </div>
-      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Boten</button>
-      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">Sloep Raptor</a><br>
-        <a class="FooterMenu-link" href="#">Sloep Crafter</a><br>
-        <a class="FooterMenu-link" href="">Sportboot Marshal</a><br>
-        <a class="FooterMenu-link" href="#">Sportboot Moonraker</a><br>
+      <button @click="isOpenBoten = !isOpenBoten" class="MobileMenu-title two">Boten</button>
+      <div v-if="isOpenBoten" class="FooterMenu-box">
+        <a class="MobileMenu-link" href="#">Alle boten</a><br>
+        <a class="MobileMenu-link" href="#">Sloep Raptor</a><br>
+        <a class="MobileMenu-link" href="#">Sloep Crafter</a><br>
+        <a class="MobileMenu-link" href="">Sportboot Marshal</a><br>
+        <a class="MobileMenu-link" href="#">Sportboot Moonraker</a><br>
       </div>
-      <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Jachthaven</button>
-      <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">De werf</a><br>
-        <a class="FooterMenu-link" href="#">Winterstalling</a><br>
-        <a class="FooterMenu-link" href="">Onderhoud</a><br>
+      <button @click="isOpenJachthaven = !isOpenJachthaven" class="MobileMenu-title three">Jachthaven</button>
+      <div v-if="isOpenJachthaven" class="FooterMenu-box">
+        <a class="MobileMenu-link" href="/jachthaven">De werf</a><br>
+        <a class="MobileMenu-link" href="#">Winterstalling</a><br>
+        <a class="MobileMenu-link" href="">Onderhoud</a><br>
       </div>
-      <button class="FooterMenu-title">Nieuws</button>
-      <button class="FooterMenu-title">Occasions</button>
-      <button class="FooterMenu-title">Contact</button>
-
+      <button class="MobileMenu-title"><a class="MobileMenu-title" href="/nieuws">Nieuws</a></button>
+      <button class="MobileMenu-title"><a class="MobileMenu-title" href="">Occasions</a></button>
+        <button class="MobileMenu-title"><a class="MobileMenu-title" href="/">D&O Shop</a></button>
+      <button class="MobileMenu-title"><a class="MobileMenu-title" href="/contact">Contact</a></button>
+      <div class="icon-container">
+      <a href="https://www.facebook.com/davyorsted"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/davyorsted/?hl=nl"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+    isOpenOverOns: false,
+    isOpenBoten: false,
+    isOpenJachthaven: false,
+    }
+  }
+}
+</script>
+
 <style scoped>
 *{
   list-style: none;
 }
+.fa-facebook-f,
+.fa-instagram{
+  font-size: 45px;
+  color: white;
+  margin: 30px;
+}
+.icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mobile-menu{
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
 }
+.material-icons{
+  font-size: 50px;
+  color: white;
+}
+
 .nav-image{
   width: 90%;
   height: auto;
   display: none;
 }
+.MobileMenu-title{
+  font-size: 28px;
+  color: white;
+  font-family: 'FuturaStd';
+  margin: 15px;
+  background: none;
+  border: none;
+  width: 100%;
+}
+.MobileMenu-title:active,
+.MobileMenu-title:hover{
+  color: #A89B8C;
+}
+.one:after,
+.two::after,
+.three::after {
+  content: '\276F';
+  color: white;
+  float: right;
+  font-size: 15px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.MobileMenu-link{
+  font-size: 16px;
+  color: white;
+  font-family: "FuturaStd";
+  margin-top: 10px;
+  height: 10px;
+  text-align: center;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* .FooterMenu-box{
+  height: 100px;
+} */
 .footer-menu{
   margin: 0 auto;
 }

@@ -266,7 +266,7 @@ form{
   margin-bottom: 40px;
 }
 .FooterMenu-title {
-  font-family: Baskerville;
+  font-family: 'Baskerville';
   font-size: 21px;
   background-color: #fff;
   color: #4C565C;

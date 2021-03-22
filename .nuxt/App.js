@@ -10,6 +10,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+
 import _6f6c098b from '../layouts/default.vue'
 import _dd3c09a0 from '../layouts/headerbar.vue'
 

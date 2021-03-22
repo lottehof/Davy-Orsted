@@ -36,7 +36,7 @@
           </article>
         </div>
 
-        <div class="handmade-content-three">
+        <div class="handmade-content-three" id="test">
             <img :src="story.content.content_three_image" alt="boot" class="handmade-content-image-three">
         </div>
       </section>

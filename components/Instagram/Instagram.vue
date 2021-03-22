@@ -138,6 +138,7 @@ export default {
 }
 .instagram-name{
   width: 115px;
+  height: 30px;
   font-size: 12px;
   font-weight: 500;
   line-height: 4;

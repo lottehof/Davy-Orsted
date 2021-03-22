@@ -206,30 +206,9 @@ li:before{
   .boat-title{
     font-size: 22px;
   }
-}
-
-@media (min-width: 1300px) {
-  .aluSloepen-container{
-    height: 1146px;
-  }
-  .modellen-header{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .model{
-    width: 100%;
-    text-align: center;
-  }
-  .head-title{
-    font-size: 36px;
-    margin-bottom: 18px;
-    margin-top: 77px;
-  }
-  .container-title{
-    margin-top: 37px;
-    margin-bottom: 77px;
+  .boat-sub-title,
+  .list-items {
+    display: block;
   }
   .wrap{
     display: flex;
@@ -255,12 +234,36 @@ li:before{
     grid-column: 3 / span 2;
     grid-row: 3 / span 2 ;
   }
-
   .modellen-content:nth-of-type(2),
   .modellen-content:nth-of-type(4) {
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .aluSloepen-container{
+    height: 1146px;
+  }
+  .modellen-header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .model{
+    width: 100%;
+    text-align: center;
+  }
+  .head-title{
+    font-size: 36px;
+    margin-bottom: 18px;
+    margin-top: 77px;
+  }
+  .container-title{
+    margin-top: 37px;
+    margin-bottom: 77px;
   }
   .modellen-title{
     display: flex;
@@ -279,10 +282,7 @@ li:before{
     width: 175px;
     margin-top: 43px;
   }
-  .boat-sub-title,
-  .list-items {
-    display: block;
-  }
+
   .list-items{
     font-size: 14px;
     text-align: left;
