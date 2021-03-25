@@ -2,7 +2,7 @@
   <section class="overOns">
     <div class="blok">
       <div class="container-top-border"><h4 class="title">Over ons</h4></div>
-      <img :src="story.content.header_image" alt="logo" class="overons-start-image">
+      <!-- <img :src="story.content.header_image" alt="logo" class="overons-start-image"> -->
     </div>
     <section class="quote">
       <h1 class="quote-text">{{ story.content.quote }}</h1>
@@ -105,7 +105,7 @@ export default {
 .overons-start-image,
 .overons-start-image-two{
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   margin: 0 auto;
   background-size: cover;
   background-position: center;

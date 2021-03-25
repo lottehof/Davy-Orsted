@@ -3,9 +3,9 @@
     <section>
       <div class="container-top-border"><h4 class="title">Hand-made</h4></div>
     </section>
-    <section class="quote">
+    <!-- <section class="quote">
       <h1 class="quote-text">{{ story.content.Title }}</h1>
-    </section>
+    </section> -->
     <section class="handmade-container-one">
       <div class="handmade-content">
           <img :src="story.content.content_one_image" alt="boot" class="handmade-content-image-one">

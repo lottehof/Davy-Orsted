@@ -21,6 +21,10 @@
         </figure>
       </div>
     </section>
+    <!-- <Onderhoud
+      :key="story.content._id"
+      :blok="story.content" /> -->
+
     <Information
       :key="story.content._id"
       :blok="story.content" />
@@ -31,11 +35,13 @@
 <script>
 import Information from '@/components/Information/Information'
 import Instagram from '@/components/Instagram/Instagram'
+import Onderhoud from '@/components/Overons/Onderhoud'
 export default {
   layout: 'headerbar',
   components: {
     Information,
     Instagram,
+    Onderhoud
   },
 
 /*CONNECTOR TO CMS STORYBLOK*/
@@ -97,7 +103,7 @@ p{display: block;}
 }
 .jachthaven-start-image{
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }

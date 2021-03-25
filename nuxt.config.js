@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require("axios");
 export default {
     target: 'static', // default is 'server'
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -60,7 +60,7 @@ export default {
 
     generate:{
       routes: function(){
-        return axios.get('https://api.storyblok.com/v1/cdn/stories?&version=published&token=6VEe757Atuepg6h4rcvVhAtt&starts_with=nieuws&cv=' +
+        return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=6VEe757Atuepg6h4rcvVhAtt&starts_with=nieuws&cv=' +
         Math.floor(Date.now() / 1e3)
     ).then(res => {
       const blogPosts = res.data.stories.map(bp => bp.full_slug);
