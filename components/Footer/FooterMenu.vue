@@ -6,7 +6,7 @@
           <div>
             <h4 class="title">Sign up for our newsletter</h4>
           </div>
-          <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <form>
             <div class="group">
               <label for="name">First name</label>
               <input type="text" id="name" placeholder="First name" required>
@@ -17,16 +17,11 @@
 
             <div class="group">
               <label for="email" >Email address</label>
-              <input type="email" value="" name="EMAIL" class="required email"  id="email" placeholder="Email address"required>
+              <input type="email" id="email" placeholder="Email address" required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div> 
             </div>
-            <input type="submit" value="Subscribe" name="subscribe" hidden="true" class="button">
-          </form>
+</form>
         </div>
         <div class="col_2">
           <div>
