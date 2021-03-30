@@ -12,13 +12,18 @@
               <input type="text" id="name" placeholder="First name" required>
               <span class="highlight"></span>
               <span class="bar"></span>
+
             </div>
 
             <div class="group">
               <label for="email" >Email address</label>
-              <input type="text" id="email" placeholder="Email address"required>
+              <input type="email" value="" name="EMAIL" class="required email"  id="email" placeholder="Email address"required>
               <span class="highlight"></span>
               <span class="bar"></span>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div> 
             </div>
             <input type="submit" value="Subscribe" name="subscribe" hidden="true" class="button">
           </form>
@@ -82,28 +87,26 @@
 
       <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Algemeen</button>
       <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="/jachthaven">Werf</a><br>
-        <a class="FooterMenu-link" href="#">Occasions</a><br>
-        <a class="FooterMenu-link" href="/contact">Contact</a><br>
-        <a class="FooterMenu-link" href="#">Other things</a><br><br>
+        <a class="FooterMenu-link" href="/overons">Wie wij zijn</a><br>
+        <a class="FooterMenu-link" href="/hand-made">Hand-made</a><br>
+        <a class="FooterMenu-link" href="/nieuws">Nieuws</a><br><br>
       </div>
       <hr>
 
       <button @click="isOpenBoten = !isOpenBoten" class="FooterMenu-title">Boten</button>
       <div v-if="isOpenBoten" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">Moon</a><br>
-        <a class="FooterMenu-link" href="#">Rasor</a><br>
-        <a class="FooterMenu-link" href="#">Alu</a><br>
-        <a class="FooterMenu-link" href="#">Tuinmeubelen</a><br><br>
+        <a class="FooterMenu-link" href="#">Raptor</a><br>
+        <a class="FooterMenu-link" href="#">Crafter</a><br>
+        <a class="FooterMenu-link" href="#">Marshall</a><br>
+        <a class="FooterMenu-link" href="#">Moonraker</a><br><br>
       </div>
       <hr>
 
       <button @click="isOpenAbout = !isOpenAbout" class="FooterMenu-title">About</button>
       <div v-if="isOpenAbout" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">Moon</a><br>
-        <a class="FooterMenu-link" href="#">Rasor</a><br>
-        <a class="FooterMenu-link" href="#">Alu</a><br>
-        <a class="FooterMenu-link" href="#">Items</a><br><br>
+        <a class="FooterMenu-link" href="/jachthaven">De werf</a><br>
+        <a class="FooterMenu-link" href="/jachthaven#Onderhoud">Onderhoud</a><br>
+        <a class="FooterMenu-link" href="/jachthaven#Winterstalling">Winterstalling</a><br><br>
       </div>
       <hr>
 
