@@ -10,7 +10,6 @@
               <li><a href="/overons">Wie wij zijn</a></li>
               <li><a href="/hand-made">Hand-made</a></li>
               <li><a href="/nieuws">Nieuws</a></li>
-              <li><a href="">Occasions</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
          </div>
@@ -34,7 +33,7 @@
               <li><a href="/jachthaven#Onderhoud">Onderhoud</a></li>
               <li><a href="/jachthaven#Winterstalling">Winterstalling</a></li>
               <li><a href="#">D&O Shop</a></li>
-              <li><a href="/jachthaven#">Aanbod onderdelen en occasions</a></li>
+              <li><a href="/jachthaven#">Aanbod occasions en onderdelen</a></li>
             </ul>
          </div>
          <div class="col_5">
@@ -65,7 +64,7 @@
         <a class="MobileMenu-link" href="/jachthaven#Winterstalling">Winterstalling</a><br>
       </div>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/nieuws">Nieuws</a></button>
-      <button class="MobileMenu-title"><a class="MobileMenu-title" href="">Occasions</a></button>
+      <button class="MobileMenu-title"><a class="MobileMenu-title" href="">Aanbod occasions en onderdelen</a></button>
         <button class="MobileMenu-title"><a class="MobileMenu-title" href="/">D&O Shop</a></button>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/contact">Contact</a></button>
       <div class="icon-container">

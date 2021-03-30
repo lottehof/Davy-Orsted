@@ -1,28 +1,36 @@
 <template lang="html">
   <div class="information-boxes" v-editable="blok">
     <div class="information-box-content">
+      <a href="/nieuws">
         <figure>
           <img :src="blok.image_box_1" class="content-image" alt="Nieuws">
         </figure>
       <h3>{{ blok.image_box_1_title }}</h3>
+      </a>
     </div>
     <div class="information-box-content">
+      <a href="/jachthaven#Winterstalling">
         <figure>
           <img :src="blok.image_box_2" class="content-image" alt="Winterstalling Davy&Orsted">
         </figure>
         <h3>{{ blok.image_box_2_title }}</h3>
+        </a>
     </div>
     <div class="information-box-content">
+      <a href="/">
         <figure>
           <img :src="blok.image_box_3" class="content-image" alt="Occasions Davy&Orsted">
         </figure>
       <h3>{{ blok.image_box_3_title }}</h3>
+      </a>
     </div>
     <div class="information-box-content">
+      <a href="/jachthaven">
         <figure>
           <img :src="blok.image_box_4" class="content-image" alt="De werf">
         </figure>
       <h3>{{ blok.image_box_4_title }}</h3>
+      </a>
     </div>
   </div>
 </template>
