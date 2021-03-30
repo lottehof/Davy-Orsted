@@ -22,6 +22,7 @@
     :key="story.content._id"
     :blok="story.content" />
     <Instagram />
+    <!-- <SignUp /> -->
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import Instagram from '@/components/Instagram/Instagram'
 import Information from '@/components/Information/Information'
 import TheHeader from '~/components/HomeMenu/HomeTheHeader'
 import TheSideNav from '~/components/HomeMenu/HomeTheSideNav'
+import SignUp from '~/components/Footer/SignUp'
 export default {
   components: {
     History,
@@ -42,6 +44,7 @@ export default {
     Information,
     TheHeader,
     TheSideNav,
+    SignUp
   },
   computed: {
       isSidebar() {

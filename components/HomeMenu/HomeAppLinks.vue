@@ -31,9 +31,9 @@
            </div>
            <ul>
               <li><a href="/jachthaven">Over de werf</a></li>
-              <li><a href="/jachthaven#">Onderhoud</a></li>
-              <li><a href="/jachthaven#">Winterstalling</a></li>
-              <li><a href="/jachthaven#">D&O Shop</a></li>
+              <li><a href="/jachthaven#Onderhoud">Onderhoud</a></li>
+              <li><a href="/jachthaven#Winterstalling">Winterstalling</a></li>
+              <li><a href="#">D&O Shop</a></li>
               <li><a href="/jachthaven#">Aanbod onderdelen en occasions</a></li>
             </ul>
          </div>
@@ -61,8 +61,8 @@
       <button @click="isOpenJachthaven = !isOpenJachthaven" class="MobileMenu-title three">Jachthaven</button>
       <div v-if="isOpenJachthaven" class="FooterMenu-box">
         <a class="MobileMenu-link" href="/jachthaven">De werf</a><br>
-        <a class="MobileMenu-link" href="#">Winterstalling</a><br>
-        <a class="MobileMenu-link" href="">Onderhoud</a><br>
+                <a class="MobileMenu-link" href="/jachthaven#Onderhoud">Onderhoud</a><br>
+        <a class="MobileMenu-link" href="/jachthaven#Winterstalling">Winterstalling</a><br>
       </div>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/nieuws">Nieuws</a></button>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="">Occasions</a></button>

@@ -6,20 +6,21 @@
           <div>
             <h4 class="title">Sign up for our newsletter</h4>
           </div>
-          <form>
+          <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="group">
-              <input type="text" required>
+              <label for="name">First name</label>
+              <input type="text" id="name" placeholder="First name" required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>First name</label>
             </div>
 
             <div class="group">
-              <input type="text" required>
+              <label for="email" >Email address</label>
+              <input type="text" id="email" placeholder="Email address"required>
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>Email address</label>
             </div>
+            <input type="submit" value="Subscribe" name="subscribe" hidden="true" class="button">
           </form>
         </div>
         <div class="col_2">
@@ -72,10 +73,10 @@
       <div class="form">
         <h4 class="form-title">Sign up for our newsletter</h4>
         <form>
-          <input type="text" required>
+          <label for="email-mobile">Email address</label>
+          <input id="email-mobile" type="text" required>
           <span class="highlight"></span>
           <span class="bar"></span>
-          <label>Email address</label>
         </form>
       </div>
 
@@ -137,6 +138,9 @@ export default {
 }
 a{
   font-size: 18px;
+}
+label{
+  display: none;
 }
 .wrapper .navbar {
   background: #222222;
@@ -232,7 +236,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .bar:after {
   right:50%;
 }
-label 				 {
+::placeholder	{
   color: rgba(217, 216, 214, 0.5);;
   font-size:18px;
   position:absolute;

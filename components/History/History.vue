@@ -147,7 +147,7 @@ a{
 @media (min-width: 1700px) {
   .history-text{
     width: 679px;
-    height: 665px;
+    height: 600px;
   }
 }
 </style>

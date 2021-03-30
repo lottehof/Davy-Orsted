@@ -21,16 +21,18 @@
         <h2 class="contact-title">Contact ons</h2>
         <form method="post" name="contact" data-netlify-recaptcha="true" data-netlify="true"  action="/thank-you">
           <div class="group">
-            <input type="text" name="name" placeholder="Naam" >
+            <input id="name" type="text" name="Naam" placeholder="Naam" >
           </div>
           <div class="group">
-            <input type="text" name="email" placeholder="E-mail" >
+            <input id="email" type="text" name="e-mail" placeholder="E-mail" >
           </div>
           <div class="group">
-            <input type="text" name="phoneNO" placeholder="Telefoonnummer" >
+            <label for="phoneno">Telefoonnummer</label>
+            <input id="phoneno" type="text" name="phoneNO" placeholder="Telefoonnummer" >
           </div>
           <div class="group">
-            <textarea rows="8" name="message" cols="80" placeholder="Bericht"></textarea>
+            <label for="message">Bericht</label>
+            <textarea id="message" rows="8" name="message" cols="80" placeholder="Bericht"></textarea>
           </div>
           <div class="group">
             <div data-netlify-recaptcha="true"class="recaptcha" ></div>
@@ -54,6 +56,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+label{
+  display: none;
+}
 .contact{
   width: 100vw;
 }

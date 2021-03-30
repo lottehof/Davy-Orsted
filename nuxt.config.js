@@ -17,7 +17,12 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Baskervville&display=swap'},
       { rel: 'stylesheet', href:'https://fonts.googleapis.com/icon?family=Material+Icons'}
     ],
-    script: [ { src: 'https://www.google.com/recaptcha/api.js', async: true, defer: true} ],
+    script: [
+      { src: 'https://www.google.com/recaptcha/api.js', async: true, defer: true},
+      { src: "//app.storyblok.com/f/storyblok-latest.js?t=6VEe757Atuepg6h4rcvVhAtt"}
+
+     ],
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

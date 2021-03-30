@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import TheHeader from '~/components/Menu/TheHeader'
-import TheSideNav from '~/components/Menu/TheSideNav'
+import TheHeader from '@/components/Menu/TheHeader'
+import TheSideNav from '@/components/Menu/TheSideNav'
 import FooterMenu from '@/components/Footer/FooterMenu'
 import Footer from '@/components/Footer/Footer'
 export default {

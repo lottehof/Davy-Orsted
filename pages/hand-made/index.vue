@@ -289,6 +289,13 @@ export default {
     height: 100%;
     width: 100%;
   }
+  .handmade-content-image-two,
+  .handmade-content-image-three{
+    width: 80%;
+  }
+  .handmade-content-image-three{
+    float: right;
+  }
   .handmade-content:nth-of-type(1),
   .handmade-content-two:nth-of-type(1),
   .handmade-content-three:nth-of-type(2){
@@ -321,8 +328,7 @@ export default {
     display: block;
     margin-right: auto;
     margin-left: auto;
-
-    width: 50%;
+    width: 40%;
   }
 }
 

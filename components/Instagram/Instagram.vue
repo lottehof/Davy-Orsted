@@ -5,8 +5,10 @@
           <h3 class="instagram-title">Join the Davy family</h3>
       </div>
       <div class="container-two">
-        <p class="instagram-name"><a href="https://www.instagram.com/davyorsted/?hl=nl">@davyandOrsted</a></p>
-        <a href="https://www.instagram.com/davyorsted/?hl=nl"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/davyorsted/?hl=nl">
+        <p class="instagram-name">@davyandOrsted</p>
+        <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
     <section class="section__flex__grid">
@@ -125,7 +127,7 @@ export default {
   padding: 0;
   height: 20px;
 }
-.container-two, .container-one{
+.container-two a, .container-one{
   display: flex;
   align-items: center;
   justify-content: center;

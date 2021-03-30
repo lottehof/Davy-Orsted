@@ -21,10 +21,15 @@
         </figure>
       </div>
     </section>
-    <!-- <Onderhoud
+    <Onderhoud
       :key="story.content._id"
-      :blok="story.content" /> -->
-
+      :blok="story.content" />
+    <Winterstalling
+      :key="story.content._id"
+      :blok="story.content" />
+    <Parking
+      :key="story.content._id"
+      :blok="story.content" />
     <Information
       :key="story.content._id"
       :blok="story.content" />
@@ -36,12 +41,16 @@
 import Information from '@/components/Information/Information'
 import Instagram from '@/components/Instagram/Instagram'
 import Onderhoud from '@/components/Overons/Onderhoud'
+import Winterstalling from '@/components/Overons/Winterstalling'
+import Parking from '@/components/Overons/Parking'
 export default {
   layout: 'headerbar',
   components: {
     Information,
     Instagram,
-    Onderhoud
+    Onderhoud,
+    Winterstalling,
+    Parking
   },
 
 /*CONNECTOR TO CMS STORYBLOK*/
@@ -141,7 +150,7 @@ p{display: block;}
   height: auto;
   margin-bottom: 20px;
   margin: 10px;
-  color: #8D9396;
+  color: #3e4b51;
 }
 .jachthaven-content-image{
   width: 100%;
