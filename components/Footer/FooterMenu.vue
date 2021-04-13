@@ -28,10 +28,10 @@
             <h4 class="title">Algemeen</h4>
           </div>
           <ul>
-            <li><a href="/jachthaven">Werf</a></li>
-            <li><a href="#">Occasions</a></li>
+            <li><a href="/jachthaven#Winterstalling">Winterstalling</a></li>
+            <li><a href="/handmade">Handmade</a></li>
+            <li><a href="/nieuws">D&Ø Magazine</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="#">Other things</a></li>
           </ul>
         </div>
         <div class="col_3">
@@ -39,10 +39,10 @@
             <h4 class="title">Boten</h4>
           </div>
           <ul>
-            <li><a href="#">Moon</a></li>
-            <li><a href="#">Rasor</a></li>
-            <li><a href="#">Alu</a></li>
-            <li><a href="#">Items</a></li>
+            <li><a href="boten/raptor">D&Ø Raptor</a></li>
+            <li><a href="boten/crafter">D&Ø Crafter</a></li>
+            <li><a href="boten/Marshal">Marshall</a></li>
+            <li><a href="boten/moonraker">Moonraker</a></li>
           </ul>
         </div>
         <div class="col_4">
@@ -50,10 +50,10 @@
             <h4 class="title">About</h4>
           </div>
           <ul>
-            <li><a href="#">Moon</a></li>
-            <li><a href="#">Rasor</a></li>
-            <li><a href="#">Alu</a></li>
-            <li><a href="#">Items</a></li>
+            <li><a href="/overons">Wie wij zijn</a></li>
+            <li><a href="/jachthaven">De werf</a></li>
+            <li><a href="/occasions">Occasions</a></li>
+            <li><a href="/onderdelen">Onderdelen</a></li>
           </ul>
         </div>
         <div class="col_5">
@@ -82,26 +82,28 @@
 
       <button @click="isOpenAlgemeen = !isOpenAlgemeen" class="FooterMenu-title">Algemeen</button>
       <div v-if="isOpenAlgemeen" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="/overons">Wie wij zijn</a><br>
-        <a class="FooterMenu-link" href="/hand-made">Hand-made</a><br>
-        <a class="FooterMenu-link" href="/nieuws">Nieuws</a><br><br>
+        <a class="FooterMenu-link" href="/overons">Winterstalling</a><br>
+        <a class="FooterMenu-link" href="/handmade">Handmade</a><br>
+        <a class="FooterMenu-link" href="/nieuws">D&Ø Magazine</a><br>
+        <a class="FooterMenu-link" href="/contact">Contact</a><br><br>
       </div>
       <hr>
 
       <button @click="isOpenBoten = !isOpenBoten" class="FooterMenu-title">Boten</button>
       <div v-if="isOpenBoten" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="#">Raptor</a><br>
-        <a class="FooterMenu-link" href="#">Crafter</a><br>
-        <a class="FooterMenu-link" href="#">Marshall</a><br>
-        <a class="FooterMenu-link" href="#">Moonraker</a><br><br>
+        <a class="FooterMenu-link" href="boten/raptor">D&Ø Raptor</a><br>
+        <a class="FooterMenu-link" href="boten/crafter">D&Ø Crafter</a><br>
+        <a class="FooterMenu-link" href="boten/marshal">Marshall</a><br>
+        <a class="FooterMenu-link" href="boten/moonraker">Moonraker</a><br><br>
       </div>
       <hr>
 
       <button @click="isOpenAbout = !isOpenAbout" class="FooterMenu-title">About</button>
       <div v-if="isOpenAbout" class="FooterMenu-box">
+        <a class="FooterMenu-link" href="/overons">Wie wij zijn</a><br>
         <a class="FooterMenu-link" href="/jachthaven">De werf</a><br>
-        <a class="FooterMenu-link" href="/jachthaven#Onderhoud">Onderhoud</a><br>
-        <a class="FooterMenu-link" href="/jachthaven#Winterstalling">Winterstalling</a><br><br>
+                <a class="FooterMenu-link" href="/occasions">Occasions</a><br>
+        <a class="FooterMenu-link" href="/onderdelen">Onderdelen</a><br><br>
       </div>
       <hr>
 
@@ -290,6 +292,7 @@ form{
 }
 .FooterMenu-box{
   background-color: white;
+  width: 98%;
 }
 .FooterMenu-link{
   padding-left: 18px;

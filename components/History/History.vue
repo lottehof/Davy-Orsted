@@ -48,6 +48,7 @@ export default {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Baskerville', sans-serif;
 }
 .quote-text{
   height: 82px;
@@ -103,7 +104,7 @@ a{
 
 @media (min-width: 1300px) {
   .quote-text{
-    font-size: 30px;
+    font-size: 36px;
   }
   .quote{
     margin-bottom: 25px;

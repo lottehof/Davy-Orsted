@@ -1,7 +1,7 @@
 <template>
   <div class="post">
     <div class="blok">
-      <div class="container-top-border"><h4 class="nav-title">Nieuws bericht</h4></div>
+      <div class="container-top-border"></div>
     </div>
     <h1 class="post-title">{{ story.content.title }}</h1>
     <div class="post-container">
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-
 export default {
   layout: 'headerbar',
   data () {
@@ -97,7 +96,6 @@ export default {
 }
 .post-preview-summary{
   line-height: 2.3;
-
 }
 .post-preview-summary, .post-content {
   margin: auto;
@@ -136,7 +134,6 @@ export default {
     font-size: 16px;
   }
 }
-
 @media (min-width: 1200px) {
   .post-container{
     display: grid;
@@ -156,11 +153,38 @@ export default {
   }
   .post-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 90%;
     height: auto;
     font-size: 18px;
+    margin-bottom: 200px;
   }
+  /* .post-content p:nth-of-type(1){
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 2;
+  }
+  .post-content p:nth-of-type(2){
+    grid-column: 3 / span 1;
+    grid-row: 1/ span 1;
+    height: auto;
+  }
+  .post-content p:nth-of-type(3){
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .post-content p:nth-of-type(4){
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .post-content p:nth-of-type(5){
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .post-content p:nth-of-type(6){
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  } */
+
   .post-content > p{
     margin: 10px;
     width: 80%;
@@ -182,7 +206,6 @@ export default {
       height: 55px;
     }
   }
-
   @media (min-width: 1800px) {
     .container-top-border{
       height: 65px;

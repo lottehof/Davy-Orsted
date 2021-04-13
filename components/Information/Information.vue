@@ -64,6 +64,7 @@ h3{
   color: #3d4333;
   padding-top: 20px;
   bottom: 0;
+  font-family: 'FuturaStd', sans-serif;
 }
 a{
   color: #3d4333;

@@ -8,35 +8,42 @@
             </div>
             <ul>
               <li><a href="/overons">Wie wij zijn</a></li>
-              <li><a href="/hand-made">Hand-made</a></li>
-              <li><a href="/nieuws">Nieuws</a></li>
+              <li><a href="/handmade">Handmade</a></li>
+              <li><a href="/nieuws">D&Ø Magazine</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
          </div>
          <div class="col_3">
            <div>
-             <h3 class="title">Boten</h3>
+            <a href="/boten"><h3 class="title">Boten</h3></a>
            </div>
            <ul>
-             <li><a href="#">Sloep Raptor</a></li>
-             <li><a href="#">Sloep Crafter</a></li>
-             <li><a href="#">Sportboot Marshall</a></li>
-             <li><a href="#">Sportboot Moonraker</a></li>
+             <li><a href="/boten/raptor">D&Ø Raptor</a></li>
+             <li><a href="/boten/crafter">D&Ø Crafter</a></li>
+             <li><a href="/boten/marshal">Marshall</a></li>
+             <li><a href="/boten/moonraker">Moonraker</a></li>
             </ul>
          </div>
          <div class="col_4">
            <div>
-             <h3 class="title">Jachthaven</h3>
+             <h3 class="title">Werf</h3>
            </div>
            <ul>
               <li><a href="/jachthaven">Over de werf</a></li>
               <li><a href="/jachthaven#Onderhoud">Onderhoud</a></li>
               <li><a href="/jachthaven#Winterstalling">Winterstalling</a></li>
-              <li><a href="#">D&O Shop</a></li>
-              <li><a href="#">Aanbod occasion en onderdelen</a></li>
             </ul>
          </div>
          <div class="col_5">
+           <div>
+             <h3 class="title">D&Ø Shop</h3>
+           </div>
+           <ul>
+              <li><a href="/occasions">Occasions</a></li>
+              <li><a href="/onderdelen">Onderdelen</a></li>
+            </ul>
+         </div>
+         <div class="col_6">
            <img src="@/assets/img/14.jpeg" alt="haven" class="nav-image">
         </div>
       </div>
@@ -44,27 +51,33 @@
 
     <div class="mobile-container">
       <div class="mobile-menu">
+          <button class="MobileMenu-title"><a class="MobileMenu-title" href="/">Home</a></button>
       <button @click="isOpenOverOns = !isOpenOverOns" class="MobileMenu-title one">Over ons</button>
       <div v-if="isOpenOverOns" class="FooterMenu-box">
         <a class="MobileMenu-link" href="/overons">Wie wij zijn</a><br>
-        <a class="MobileMenu-link" href="/hand-made">Hand-made</a><br>
+        <a class="MobileMenu-link" href="/handmade">Handmade</a><br>
       </div>
       <button @click="isOpenBoten = !isOpenBoten" class="MobileMenu-title two">Boten</button>
       <div v-if="isOpenBoten" class="FooterMenu-box">
-        <a class="MobileMenu-link" href="#">Alle boten</a><br>
-        <a class="MobileMenu-link" href="#">Sloep Raptor</a><br>
-        <a class="MobileMenu-link" href="#">Sloep Crafter</a><br>
-        <a class="MobileMenu-link" href="">Sportboot Marshal</a><br>
-        <a class="MobileMenu-link" href="#">Sportboot Moonraker</a><br>
+        <a class="MobileMenu-link" href="/boten">Alle boten</a><br>
+        <a class="MobileMenu-link" href="/boten/raptor">D&Ø Raptor</a><br>
+        <a class="MobileMenu-link" href="/boten/crafter">D&Ø Crafter</a><br>
+        <a class="MobileMenu-link" href="/boten/marshal">Marshall</a><br>
+        <a class="MobileMenu-link" href="/boten/moonraker">Moonraker</a><br>
       </div>
-      <button @click="isOpenJachthaven = !isOpenJachthaven" class="MobileMenu-title three">Jachthaven</button>
+      <button @click="isOpenJachthaven = !isOpenJachthaven" class="MobileMenu-title three">Werf</button>
       <div v-if="isOpenJachthaven" class="FooterMenu-box">
         <a class="MobileMenu-link" href="/jachthaven">De werf</a><br>
                 <a class="MobileMenu-link" href="/jachthaven#Onderhoud">Onderhoud</a><br>
         <a class="MobileMenu-link" href="/jachthaven#Winterstalling">Winterstalling</a><br>
       </div>
-      <button class="MobileMenu-title"><a class="MobileMenu-title" href="/nieuws">Nieuws</a></button>
-      <button class="MobileMenu-title"><a class="MobileMenu-title" href="">Aanbod occasions en onderdelen</a></button>
+      <button class="MobileMenu-title"><a class="MobileMenu-title" href="/nieuws">D&Ø Magazine</a></button>
+
+      <button @click="isOpenShop = !isOpenShop" class="MobileMenu-title three">D&Ø Shop</button>
+      <div v-if="isOpenShop" class="FooterMenu-box">
+        <a class="MobileMenu-link" href="/occasions">Occasions</a><br>
+        <a class="MobileMenu-link" href="/onderdelen">Onderdelen</a><br>
+      </div>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/">D&O Shop</a></button>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/contact">Contact</a></button>
       <div class="icon-container">
@@ -83,6 +96,7 @@ export default {
     isOpenOverOns: false,
     isOpenBoten: false,
     isOpenJachthaven: false,
+    isOpenShop: false,
     }
   }
 }
@@ -205,10 +219,6 @@ ul li{
   .mobile-container{
     display: none;
   }
-  .nav-image{
-    width: 300px;
-    height: auto;
-  }
   .footer-menu{
    display: grid;
    grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -262,7 +272,7 @@ ul li{
    margin-top: 0px;
   }
   .nav-image{
-    width: 600px;
+    width: 350px;
     height: 300px;
     display: block;
   }
@@ -292,6 +302,11 @@ ul li{
   }
   ul{
     width: 200px;
+  }
+}
+@media (min-width: 1800px) {
+  .nav-image{
+    width: 500px;
   }
 }
 </style>
