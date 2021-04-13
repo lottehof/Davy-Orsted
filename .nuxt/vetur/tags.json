@@ -32,6 +32,9 @@
   "HandMadeImageGrid": {
     "description": "Auto imported from components/Hand-made/ImageGrid.vue"
   },
+  "History": {
+    "description": "Auto imported from components/History/History.vue"
+  },
   "HomeAppLinks": {
     "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
   },
@@ -41,14 +44,17 @@
   "HomeTheSideNav": {
     "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
   },
-  "History": {
-    "description": "Auto imported from components/History/History.vue"
+  "Instagram": {
+    "description": "Auto imported from components/Instagram/Instagram.vue"
   },
   "Information": {
     "description": "Auto imported from components/Information/Information.vue"
   },
-  "Instagram": {
-    "description": "Auto imported from components/Instagram/Instagram.vue"
+  "ModellenAluSloepen": {
+    "description": "Auto imported from components/Modellen/AluSloepen.vue"
+  },
+  "ModellenAluSportboot": {
+    "description": "Auto imported from components/Modellen/AluSportboot.vue"
   },
   "MenuAppLinks": {
     "description": "Auto imported from components/Menu/AppLinks.vue"
@@ -67,11 +73,5 @@
   },
   "OveronsWinterstalling": {
     "description": "Auto imported from components/Overons/Winterstalling.vue"
-  },
-  "ModellenAluSloepen": {
-    "description": "Auto imported from components/Modellen/AluSloepen.vue"
-  },
-  "ModellenAluSportboot": {
-    "description": "Auto imported from components/Modellen/AluSportboot.vue"
   }
 }
