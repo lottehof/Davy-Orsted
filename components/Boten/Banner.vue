@@ -28,8 +28,8 @@ export default {
   font-weight: 600;
   text-align: center;
   margin-bottom: 5px;
-  padding: 16px 20px 20px 30px;
-  height:  120px;
+  /* padding: 16px 20px 20px 30px; */
+  /* height:  120px; */
 }
 
 .calltoaction-button{

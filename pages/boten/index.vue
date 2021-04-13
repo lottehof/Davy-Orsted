@@ -46,7 +46,7 @@ export default {
 
 <style lang="css" scoped>
 .test{
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
 }
 .title{
@@ -56,7 +56,7 @@ export default {
   text-transform: uppercase;
 }
 .post-preview-holder{
-  width: 100%;
+  width: 350px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

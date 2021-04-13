@@ -78,7 +78,6 @@
         <a class="MobileMenu-link" href="/occasions">Occasions</a><br>
         <a class="MobileMenu-link" href="/onderdelen">Onderdelen</a><br>
       </div>
-      <button class="MobileMenu-title"><a class="MobileMenu-title" href="/">D&O Shop</a></button>
       <button class="MobileMenu-title"><a class="MobileMenu-title" href="/contact">Contact</a></button>
       <div class="icon-container">
       <a href="https://www.facebook.com/davyorsted"><i class="fab fa-facebook-f"></i></a>

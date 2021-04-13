@@ -44,6 +44,7 @@ export default {
   width: 100%;
   overflow-y: scroll;
  -webkit-overflow-scrolling:touch;
+ z-index: 10;
 }
 .sidenav {
   height: 100vh;

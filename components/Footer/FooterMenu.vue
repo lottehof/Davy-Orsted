@@ -74,7 +74,7 @@
         <h4 class="form-title">Sign up for our newsletter</h4>
         <form>
           <label for="email-mobile">Email address</label>
-          <input id="email-mobile" type="text" required>
+          <input id="email-mobile" type="text" placeholder="Email-adres"required>
           <span class="highlight"></span>
           <span class="bar"></span>
         </form>

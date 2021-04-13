@@ -159,31 +159,32 @@ export default {
     font-size: 18px;
     margin-bottom: 200px;
   }
-  /* .post-content p:nth-of-type(1){
+  .post-content p:nth-of-type(6){
     grid-column: 1 / span 1;
-    grid-row: 1/ span 2;
+    grid-row: 1/ span 1;
   }
-  .post-content p:nth-of-type(2){
+  .post-content p:nth-of-type(3){
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .post-content p:nth-of-type(5){
     grid-column: 3 / span 1;
     grid-row: 1/ span 1;
     height: auto;
   }
-  .post-content p:nth-of-type(3){
+  .post-content p:nth-of-type(2){
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
   }
   .post-content p:nth-of-type(4){
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-  }
-  .post-content p:nth-of-type(5){
     grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
+    grid-row: 3 / span 1;
   }
-  .post-content p:nth-of-type(6){
+
+  .post-content p:nth-of-type(1){
     grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-  } */
+    grid-row: 1 / span 2;
+  }
 
   .post-content > p{
     margin: 10px;
