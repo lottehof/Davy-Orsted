@@ -5,12 +5,6 @@
   "Slide": {
     "description": "Auto imported from components/Slide.vue"
   },
-  "BlogBootPostPreview": {
-    "description": "Auto imported from components/Blog/BootPostPreview.vue"
-  },
-  "BlogPostPreview": {
-    "description": "Auto imported from components/Blog/PostPreview.vue"
-  },
   "BotenBanner": {
     "description": "Auto imported from components/Boten/Banner.vue"
   },
@@ -19,15 +13,6 @@
   },
   "BotenBootInformation": {
     "description": "Auto imported from components/Boten/Boot-information.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
-  },
-  "FooterMenu": {
-    "description": "Auto imported from components/Footer/FooterMenu.vue"
-  },
-  "FooterSignUp": {
-    "description": "Auto imported from components/Footer/SignUp.vue"
   },
   "HandMadeImageGrid": {
     "description": "Auto imported from components/Hand-made/ImageGrid.vue"
@@ -41,20 +26,29 @@
   "HomeTheSideNav": {
     "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
   },
-  "History": {
-    "description": "Auto imported from components/History/History.vue"
+  "BlogBootPostPreview": {
+    "description": "Auto imported from components/Blog/BootPostPreview.vue"
+  },
+  "BlogPostPreview": {
+    "description": "Auto imported from components/Blog/PostPreview.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
+  "FooterMenu": {
+    "description": "Auto imported from components/Footer/FooterMenu.vue"
+  },
+  "FooterSignUp": {
+    "description": "Auto imported from components/Footer/SignUp.vue"
   },
   "Information": {
     "description": "Auto imported from components/Information/Information.vue"
   },
+  "History": {
+    "description": "Auto imported from components/History/History.vue"
+  },
   "Instagram": {
     "description": "Auto imported from components/Instagram/Instagram.vue"
-  },
-  "ModellenAluSloepen": {
-    "description": "Auto imported from components/Modellen/AluSloepen.vue"
-  },
-  "ModellenAluSportboot": {
-    "description": "Auto imported from components/Modellen/AluSportboot.vue"
   },
   "MenuAppLinks": {
     "description": "Auto imported from components/Menu/AppLinks.vue"
@@ -64,6 +58,12 @@
   },
   "MenuTheSideNav": {
     "description": "Auto imported from components/Menu/TheSideNav.vue"
+  },
+  "ModellenAluSloepen": {
+    "description": "Auto imported from components/Modellen/AluSloepen.vue"
+  },
+  "ModellenAluSportboot": {
+    "description": "Auto imported from components/Modellen/AluSportboot.vue"
   },
   "OveronsOnderhoud": {
     "description": "Auto imported from components/Overons/Onderhoud.vue"

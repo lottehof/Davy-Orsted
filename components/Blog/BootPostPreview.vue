@@ -51,6 +51,7 @@ export default {
   /* border: 1px solid red; */
   min-height: 700px;
   position: relative;
+  z-index: 0;
 }
 .post-preview:hover{
      box-shadow: 0 8px 6px -6px black;
