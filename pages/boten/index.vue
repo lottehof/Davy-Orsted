@@ -1,5 +1,5 @@
 <template lang="html">
-  <section>
+  <section class="boten">
     <hr>
     <h1 class="title">Boten</h1>
     <div class="test">
@@ -45,6 +45,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.boten{
+  width: 100vw;
+  min-height: 100vh;
+}
 .test{
   width: 90%;
   margin: 0 auto;
@@ -56,7 +60,7 @@ export default {
   text-transform: uppercase;
 }
 .post-preview-holder{
-  width: 350px;
+  width: auto;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

@@ -5,6 +5,12 @@
   "Slide": {
     "description": "Auto imported from components/Slide.vue"
   },
+  "BlogBootPostPreview": {
+    "description": "Auto imported from components/Blog/BootPostPreview.vue"
+  },
+  "BlogPostPreview": {
+    "description": "Auto imported from components/Blog/PostPreview.vue"
+  },
   "BotenBanner": {
     "description": "Auto imported from components/Boten/Banner.vue"
   },
@@ -22,12 +28,6 @@
   },
   "FooterSignUp": {
     "description": "Auto imported from components/Footer/SignUp.vue"
-  },
-  "BlogBootPostPreview": {
-    "description": "Auto imported from components/Blog/BootPostPreview.vue"
-  },
-  "BlogPostPreview": {
-    "description": "Auto imported from components/Blog/PostPreview.vue"
   },
   "HandMadeImageGrid": {
     "description": "Auto imported from components/Hand-made/ImageGrid.vue"
