@@ -52,7 +52,7 @@ export default {
   z-index: 0;
 }
 .test{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .title{
@@ -62,25 +62,36 @@ export default {
   text-transform: uppercase;
 }
 .post-preview-holder{
-  width: auto;
+  width: 350px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-
+@media (min-width: 768px) {
+  .post-preview-holder{
+    width: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
 @media (min-width: 1400px) {
   .test{
     width: 80%;
   }
-
+  .post-preview-holder{
+    width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
   .title{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
   }
-
 }
 
 

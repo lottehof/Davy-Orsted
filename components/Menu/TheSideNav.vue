@@ -47,8 +47,8 @@ export default {
   width: 100%;
   overflow-y: scroll;
  -webkit-overflow-scrolling:touch;
- z-index: 9999;
- position: fixed;
+ /* z-index: 9999;
+ position: fixed; */
 }
 .sidenav {
   height: 100vh;
@@ -86,6 +86,16 @@ export default {
   transform: translateY(-100%);
 }
 
+@media (max-width: 768px) {
+  .sidenav-container {
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+   -webkit-overflow-scrolling:touch;
+   z-index: 9999;
+   position: fixed;
+  }
+}
 @media (min-width: 750px) {
   .sidenav {
     width: 100%;

@@ -55,7 +55,7 @@ export default {
     justify-self: start;
     flex-direction: column;
     justify-content: space-around;
-    height: 25%;
+    height: 15%;
     width: 25px;
     cursor: pointer;
   }

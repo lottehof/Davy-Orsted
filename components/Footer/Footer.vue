@@ -19,7 +19,6 @@ export default {
 .footer{
   position: relative;
   height: 200px;
-  z-index: 0;
 }
 .copyrights1{
   display: none;
