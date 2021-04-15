@@ -5,7 +5,7 @@
     </section>
     <h1 class="onderdelen-title">Onderdelen</h1>
     <div v-if="onderdelenposts.length === 0">
-      <p class="geen-aanbod">Momenteel hebben wij geen occasion aanbod voor u.
+      <p class="geen-aanbod">Momenteel hebben wij geen onderdelen aanbod voor u.
       Wilt u op de hoogte blijven van ons aanbod, laat dan hier uw e-mail achter
       </p>
       <div id="mc_embed_signup">

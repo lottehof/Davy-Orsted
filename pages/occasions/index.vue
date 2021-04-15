@@ -84,13 +84,11 @@ export default {
   padding: 16px 20px 20px 30px;
 }
 .email{
-  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   height: 40px;
-  /* margin-right: 20px; */
 }
 input 				{
   font-size:18px;

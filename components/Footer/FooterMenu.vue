@@ -43,10 +43,10 @@
             <h4 class="title">Boten</h4>
           </div>
           <ul>
-            <li><a href="boten/raptor">D&Ø Raptor</a></li>
-            <li><a href="boten/crafter">D&Ø Crafter</a></li>
-            <li><a href="boten/Marshal">Marshall</a></li>
-            <li><a href="boten/moonraker">Moonraker</a></li>
+            <li><a href="/boten/raptor">D&Ø Raptor</a></li>
+            <li><a href="/boten/crafter">D&Ø Crafter</a></li>
+            <li><a href="/boten/marshal">Marshall</a></li>
+            <li><a href="/boten/moonraker">Moonraker</a></li>
           </ul>
         </div>
         <div class="col_4">
@@ -101,10 +101,10 @@
 
       <button @click="isOpenBoten = !isOpenBoten" class="FooterMenu-title">Boten</button>
       <div v-if="isOpenBoten" class="FooterMenu-box">
-        <a class="FooterMenu-link" href="boten/raptor">D&Ø Raptor</a><br>
-        <a class="FooterMenu-link" href="boten/crafter">D&Ø Crafter</a><br>
-        <a class="FooterMenu-link" href="boten/marshal">Marshall</a><br>
-        <a class="FooterMenu-link" href="boten/moonraker">Moonraker</a><br><br>
+        <a class="FooterMenu-link" href="/boten/raptor">D&Ø Raptor</a><br>
+        <a class="FooterMenu-link" href="/boten/crafter">D&Ø Crafter</a><br>
+        <a class="FooterMenu-link" href="/boten/marshal">Marshall</a><br>
+        <a class="FooterMenu-link" href="/boten/moonraker">Moonraker</a><br><br>
       </div>
       <hr>
 

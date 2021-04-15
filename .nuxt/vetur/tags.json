@@ -5,12 +5,6 @@
   "Slide": {
     "description": "Auto imported from components/Slide.vue"
   },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
-  },
-  "FooterMenu": {
-    "description": "Auto imported from components/Footer/FooterMenu.vue"
-  },
   "BlogBootPostPreview": {
     "description": "Auto imported from components/Blog/BootPostPreview.vue"
   },
@@ -23,6 +17,15 @@
   "BlogPostPreview": {
     "description": "Auto imported from components/Blog/PostPreview.vue"
   },
+  "HandMadeImageGrid": {
+    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
+  "FooterMenu": {
+    "description": "Auto imported from components/Footer/FooterMenu.vue"
+  },
   "BotenBanner": {
     "description": "Auto imported from components/Boten/Banner.vue"
   },
@@ -32,11 +35,17 @@
   "BotenBootInformation": {
     "description": "Auto imported from components/Boten/Boot-information.vue"
   },
-  "HandMadeImageGrid": {
-    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
-  },
   "History": {
     "description": "Auto imported from components/History/History.vue"
+  },
+  "HomeAppLinks": {
+    "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
+  },
+  "HomeTheHeader": {
+    "description": "Auto imported from components/HomeMenu/HomeTheHeader.vue"
+  },
+  "HomeTheSideNav": {
+    "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
   },
   "Information": {
     "description": "Auto imported from components/Information/Information.vue"
@@ -52,15 +61,6 @@
   },
   "MenuTheSideNav": {
     "description": "Auto imported from components/Menu/TheSideNav.vue"
-  },
-  "HomeAppLinks": {
-    "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
-  },
-  "HomeTheHeader": {
-    "description": "Auto imported from components/HomeMenu/HomeTheHeader.vue"
-  },
-  "HomeTheSideNav": {
-    "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
   },
   "ModellenAluSloepen": {
     "description": "Auto imported from components/Modellen/AluSloepen.vue"
