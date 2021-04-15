@@ -1,10 +1,10 @@
 <template lang="html">
   <section>
     <div class="blok-one">
-      <div class="container-top-border"><h4 class="title">Jachthaven</h4></div>
-      <figure>
+      <div class="container-top-border"></div>
+      <!-- <figure>
         <img class="jachthaven-start-image" :src="story.content.header_image" alt="header image jachthaven">
-      </figure>
+      </figure> -->
     </div>
     <section class="quote">
       <h1 class="quote-text">{{ story.content.title }}</h1>
@@ -251,7 +251,7 @@ p{display: block;}
   .jachthaven-content-article{
     width: 593px;
     height: 665px;
-    padding: 2.1rem;
+    /* padding: 2.1rem; */
     margin-left: 100px;
   }
   .jachthaven-content:nth-of-type(2){

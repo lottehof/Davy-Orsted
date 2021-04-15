@@ -129,7 +129,6 @@ export default {
   font-size: 50px;
   color: white;
 }
-
 .nav-image{
   width: 90%;
   height: auto;

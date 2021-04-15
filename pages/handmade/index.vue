@@ -1,7 +1,7 @@
 <template lang="html">
   <section class="hand-made">
     <section>
-      <div class="container-top-border"><h4 class="title">Hand-made</h4></div>
+      <div class="container-top-border"></div>
     </section>
     <!-- <section class="quote">
       <h1 class="quote-text">{{ story.content.Title }}</h1>
@@ -125,13 +125,7 @@ export default {
   height: 45px;
   background-color: #3E4B51;
 }
-.title{
-  height: 45px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .quote{
   display: flex;
   justify-content: center;

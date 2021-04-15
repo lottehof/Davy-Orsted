@@ -1,7 +1,7 @@
 <template lang="html">
   <section class="overOns">
     <div class="blok">
-      <div class="container-top-border"><h4 class="title">Over ons</h4></div>
+      <div class="container-top-border"></div>
       <!-- <img :src="story.content.header_image" alt="logo" class="overons-start-image"> -->
     </div>
     <section class="quote">

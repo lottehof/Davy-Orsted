@@ -104,6 +104,9 @@ export default {
 *{
   list-style: none;
 }
+li a:active{
+  text-decoration: underline;
+}
 .fa-facebook-f,
 .fa-instagram{
   font-size: 45px;
@@ -195,6 +198,10 @@ export default {
 }
 ul li{
    margin-left: 30px;
+}
+ul li:active,
+ul li:focus{
+  color: red;
 }
 .footer-menu-container .footer-menu ul li a{
   font-size: 12px;

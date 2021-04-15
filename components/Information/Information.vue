@@ -17,7 +17,7 @@
         </a>
     </div>
     <div class="information-box-content">
-      <a href="/">
+      <a href="/occasions">
         <figure>
           <img :src="blok.image_box_3" class="content-image" alt="Occasions Davy&Orsted">
         </figure>

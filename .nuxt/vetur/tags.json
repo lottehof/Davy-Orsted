@@ -5,6 +5,21 @@
   "Slide": {
     "description": "Auto imported from components/Slide.vue"
   },
+  "BlogBootPostPreview": {
+    "description": "Auto imported from components/Blog/BootPostPreview.vue"
+  },
+  "BlogOccassionsPreview": {
+    "description": "Auto imported from components/Blog/OccassionsPreview.vue"
+  },
+  "BlogOnderdelenPreview": {
+    "description": "Auto imported from components/Blog/OnderdelenPreview.vue"
+  },
+  "BlogPostPreview": {
+    "description": "Auto imported from components/Blog/PostPreview.vue"
+  },
+  "History": {
+    "description": "Auto imported from components/History/History.vue"
+  },
   "BotenBanner": {
     "description": "Auto imported from components/Boten/Banner.vue"
   },
@@ -20,20 +35,8 @@
   "FooterMenu": {
     "description": "Auto imported from components/Footer/FooterMenu.vue"
   },
-  "BlogBootPostPreview": {
-    "description": "Auto imported from components/Blog/BootPostPreview.vue"
-  },
-  "BlogOccassionsPreview": {
-    "description": "Auto imported from components/Blog/OccassionsPreview.vue"
-  },
-  "BlogOnderdelenPreview": {
-    "description": "Auto imported from components/Blog/OnderdelenPreview.vue"
-  },
-  "BlogPostPreview": {
-    "description": "Auto imported from components/Blog/PostPreview.vue"
-  },
-  "HandMadeImageGrid": {
-    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
+  "Information": {
+    "description": "Auto imported from components/Information/Information.vue"
   },
   "HomeAppLinks": {
     "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
@@ -43,12 +46,6 @@
   },
   "HomeTheSideNav": {
     "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
-  },
-  "History": {
-    "description": "Auto imported from components/History/History.vue"
-  },
-  "Information": {
-    "description": "Auto imported from components/Information/Information.vue"
   },
   "Instagram": {
     "description": "Auto imported from components/Instagram/Instagram.vue"
@@ -67,6 +64,9 @@
   },
   "MenuTheSideNav": {
     "description": "Auto imported from components/Menu/TheSideNav.vue"
+  },
+  "HandMadeImageGrid": {
+    "description": "Auto imported from components/Hand-made/ImageGrid.vue"
   },
   "OveronsOnderhoud": {
     "description": "Auto imported from components/Overons/Onderhoud.vue"
