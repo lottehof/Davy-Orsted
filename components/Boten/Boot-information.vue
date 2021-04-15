@@ -46,6 +46,7 @@ export default {
       this.description_content = true;
       this.uitvoering_content = false;
       this.specificaties_content = false;
+      this.dsactive = 'active';
     },
     uitvoering(){
       this.description_content = false;
@@ -80,7 +81,8 @@ export default {
   font-size: 14px;
 }
 .active,
-.boot-button:focus{
+.boot-button:focus,
+.boot-button:active{
   border-bottom: 2px solid black;
 }
 .boot-description,
