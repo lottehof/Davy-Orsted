@@ -6,8 +6,11 @@
       :class="dsactive" type="button" name="button">Beschrijving</button>
       <button @click="uitvoering"
       class="boot-button"
+      :class="uvactive"
        type="button" name="button">Uitvoering</button>
-      <button @click="specificaties" class="boot-button" type="button" name="button">Specificaties</button>
+      <button @click="specificaties"
+      class="boot-button"
+      :class="spactive"  type="button" name="button">Specificaties</button>
     </div>
     <div class="boot-description" v-if="description_content">
       <section>
@@ -37,6 +40,8 @@ export default {
       uitvoering_content: false,
       specificaties_content: false,
       dsactive: 'active',
+      uvactive: '',
+      spactive: '',
       selectedImage: {
       }
     }
@@ -47,18 +52,24 @@ export default {
       this.uitvoering_content = false;
       this.specificaties_content = false;
       this.dsactive = 'active';
+      this.uvactive = '';
+      this.spactive = '';
     },
     uitvoering(){
       this.description_content = false;
       this.uitvoering_content = true;
       this.specificaties_content = false;
       this.dsactive = '';
+      this.uvactive = 'active';
+      this.spactive = '';
     },
     specificaties(){
       this.description_content = false;
       this.uitvoering_content = false;
       this.specificaties_content = true;
       this.dsactive = '';
+      this.uvactive = '';
+      this.spactive = 'active';
     }
   }
 
