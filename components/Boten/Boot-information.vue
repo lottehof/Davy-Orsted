@@ -1,8 +1,12 @@
 <template lang="html">
   <section class="content">
     <div class="button-container">
-      <button @click="description" class="boot-button active" type="button" name="button">Beschrijving</button>
-      <button @click="uitvoering" class="boot-button" type="button" name="button">Uitvoering</button>
+      <button @click="description"
+      class="boot-button"
+      :class="dsactive" type="button" name="button">Beschrijving</button>
+      <button @click="uitvoering"
+      class="boot-button"
+       type="button" name="button">Uitvoering</button>
       <button @click="specificaties" class="boot-button" type="button" name="button">Specificaties</button>
     </div>
     <div class="boot-description" v-if="description_content">
@@ -32,6 +36,7 @@ export default {
       description_content: true,
       uitvoering_content: false,
       specificaties_content: false,
+      dsactive: 'active',
       selectedImage: {
       }
     }
@@ -41,17 +46,18 @@ export default {
       this.description_content = true;
       this.uitvoering_content = false;
       this.specificaties_content = false;
-
     },
     uitvoering(){
       this.description_content = false;
       this.uitvoering_content = true;
       this.specificaties_content = false;
+      this.dsactive = '';
     },
     specificaties(){
       this.description_content = false;
       this.uitvoering_content = false;
       this.specificaties_content = true;
+      this.dsactive = '';
     }
   }
 
@@ -59,9 +65,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.content{
-
-}
 .button-container{
   border-bottom: 1px solid #CACACA;
   text-align: center;
@@ -75,7 +78,6 @@ export default {
   margin-right: 20px;
   border-bottom: none;
   font-size: 14px;
-
 }
 .active,
 .boot-button:focus{

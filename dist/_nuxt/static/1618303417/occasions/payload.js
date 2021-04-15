@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/occasions", {data:[{}],fetch:{},mutations:[]});

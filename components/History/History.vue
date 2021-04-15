@@ -5,11 +5,10 @@
     </div>
     <div class="history-container">
       <div class="history-content">
-          <figure>
-            <img class="history-image" :src="blok.image" alt="jachthaven Davy&Orsted">
-          </figure>
+        <figure>
+          <img class="history-image" :src="blok.image" alt="jachthaven Davy&Orsted">
+        </figure>
       </div>
-
       <div class="history-content">
         <div class="history-text">
           <p>{{ blok.content }}
@@ -62,7 +61,6 @@ export default {
   height: 300px;
   background-repeat: no-repeat;
 }
-
 .history-text{
   height: auto;
   padding: 16px 20px 20px 30px;
@@ -70,11 +68,9 @@ export default {
   line-height: 2.43;
   color: #3e4b51;
 }
-
 .history-text > p {
   padding-bottom: 25px;
 }
-
 a{
   color: #3e4b51;
   text-decoration: none;
@@ -100,7 +96,6 @@ a{
     height: 500px;
   }
 }
-
 
 @media (min-width: 1300px) {
   .quote-text{

@@ -55,7 +55,7 @@ export default {
     justify-self: start;
     flex-direction: column;
     justify-content: space-around;
-    height: 15%;
+    height: 20%;
     width: 25px;
     cursor: pointer;
   }
@@ -110,6 +110,9 @@ export default {
   }
   header{
     height: 80px;
+  }
+  .drawer-toggle {
+    height: 15%;
   }
 }
 @media (min-width: 1800px) {

@@ -5,6 +5,24 @@
   "Slide": {
     "description": "Auto imported from components/Slide.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
+  "FooterMenu": {
+    "description": "Auto imported from components/Footer/FooterMenu.vue"
+  },
+  "BlogBootPostPreview": {
+    "description": "Auto imported from components/Blog/BootPostPreview.vue"
+  },
+  "BlogOccassionsPreview": {
+    "description": "Auto imported from components/Blog/OccassionsPreview.vue"
+  },
+  "BlogOnderdelenPreview": {
+    "description": "Auto imported from components/Blog/OnderdelenPreview.vue"
+  },
+  "BlogPostPreview": {
+    "description": "Auto imported from components/Blog/PostPreview.vue"
+  },
   "BotenBanner": {
     "description": "Auto imported from components/Boten/Banner.vue"
   },
@@ -17,35 +35,11 @@
   "HandMadeImageGrid": {
     "description": "Auto imported from components/Hand-made/ImageGrid.vue"
   },
-  "HomeAppLinks": {
-    "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
-  },
-  "HomeTheHeader": {
-    "description": "Auto imported from components/HomeMenu/HomeTheHeader.vue"
-  },
-  "HomeTheSideNav": {
-    "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
-  },
-  "BlogBootPostPreview": {
-    "description": "Auto imported from components/Blog/BootPostPreview.vue"
-  },
-  "BlogPostPreview": {
-    "description": "Auto imported from components/Blog/PostPreview.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
-  },
-  "FooterMenu": {
-    "description": "Auto imported from components/Footer/FooterMenu.vue"
-  },
-  "FooterSignUp": {
-    "description": "Auto imported from components/Footer/SignUp.vue"
+  "History": {
+    "description": "Auto imported from components/History/History.vue"
   },
   "Information": {
     "description": "Auto imported from components/Information/Information.vue"
-  },
-  "History": {
-    "description": "Auto imported from components/History/History.vue"
   },
   "Instagram": {
     "description": "Auto imported from components/Instagram/Instagram.vue"
@@ -58,6 +52,15 @@
   },
   "MenuTheSideNav": {
     "description": "Auto imported from components/Menu/TheSideNav.vue"
+  },
+  "HomeAppLinks": {
+    "description": "Auto imported from components/HomeMenu/HomeAppLinks.vue"
+  },
+  "HomeTheHeader": {
+    "description": "Auto imported from components/HomeMenu/HomeTheHeader.vue"
+  },
+  "HomeTheSideNav": {
+    "description": "Auto imported from components/HomeMenu/HomeTheSideNav.vue"
   },
   "ModellenAluSloepen": {
     "description": "Auto imported from components/Modellen/AluSloepen.vue"

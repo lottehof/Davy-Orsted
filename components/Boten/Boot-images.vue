@@ -2,9 +2,8 @@
   <section class="product__images">
     <div class="head-image-container">
       <div v-if="blok.images.length > 0">
-      <img class="head-image" :src="(selectedImage.filename || blok.images[0].filename)" :alt="selectedImage.name || blok.images[0].name">
+        <img class="head-image" :src="(selectedImage.filename || blok.images[0].filename)" :alt="selectedImage.name || blok.images[0].name">
       </div>
-      <!-- <img class="head-image" src='@/assets/img/10d.jpeg' alt=""> -->
     </div>
     <div class="sub-image-container">
       <ul class="product__thumbs">
@@ -12,25 +11,7 @@
           <img class="product__thumb-image" :src="image.filename" :alt="image.name">
         </li>
       </ul>
-      <!-- <ul class="product__thumbs">
-        <li class="product__thumb" >
-          <img class="product__thumb-image" src="@/assets/img/10b.jpeg" alt="">
-        </li>
-        <li class="product__thumb">
-          <img class="product__thumb-image" src="@/assets/img/10c.jpeg" alt="">
-        </li>
-        <li class="product__thumb">
-          <img class="product__thumb-image" src="@/assets/img/10e.jpeg" alt="">
-        </li>
-        <li class="product__thumb" >
-          <img class="product__thumb-image" src="@/assets/img/10f.jpeg" alt="">
-        </li>
-        <li class="product__thumb" >
-          <img class="product__thumb-image" src="@/assets/img/10g.jpeg" alt="">
-        </li>
-      </ul> -->
     </div>
-
   </section>
 </template>
 
@@ -40,8 +21,8 @@ export default {
 data() {
   return {
     selectedImage: {}
+    }
   }
-}
 }
 </script>
 

@@ -4,16 +4,10 @@
       <div class="legal-information">
         <p><a href="#">Terms &amp; Conditions</a></p>
         <p><a href="#">Privacy Statement</a></p>
-        <p><a href="#">Business Portal</a></p>
       </div>
     <p class="copyrights2">	&#169; Davy &amp; Orsted </p>
   </footer>
 </template>
-
-<script>
-export default {
-}
-</script>
 
 <style lang="css" scoped>
 .footer{

@@ -1,12 +1,5 @@
 [
   {
-    "name": "aanbod",
-    "path": "/aanbod",
-    "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/aanbod/index.vue",
-    "chunkName": "pages/aanbod/index",
-    "_name": "_2ff60722"
-  },
-  {
     "name": "boten",
     "path": "/boten",
     "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/boten/index.vue",
@@ -49,11 +42,11 @@
     "_name": "_06f95cbc"
   },
   {
-    "name": "Onderdelen",
-    "path": "/Onderdelen",
-    "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/Onderdelen/index.vue",
-    "chunkName": "pages/Onderdelen/index",
-    "_name": "_26facc88"
+    "name": "onderdelen",
+    "path": "/onderdelen",
+    "component": "/Users/lottevanthof/Desktop/stage/Website-code/testcms/Davy-Orsted/pages/onderdelen/index.vue",
+    "chunkName": "pages/onderdelen/index",
+    "_name": "_1b359868"
   },
   {
     "name": "overons",

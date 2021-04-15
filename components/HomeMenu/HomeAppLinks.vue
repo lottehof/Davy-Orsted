@@ -40,7 +40,7 @@
            </div>
            <ul>
             <li><a href="/occasions">Occasions</a></li>
-            <li><a href="/occasions">Onderdelen</a></li>
+            <li><a href="/onderdelen">Onderdelen</a></li>
             </ul>
          </div>
          <div class="col_6">

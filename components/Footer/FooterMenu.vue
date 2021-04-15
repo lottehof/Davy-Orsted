@@ -6,22 +6,26 @@
           <div>
             <h4 class="title">Sign up for our newsletter</h4>
           </div>
-          <form>
-            <div class="group">
-              <label for="name">First name</label>
-              <input type="text" id="name" placeholder="First name" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-
-            </div>
-
-            <div class="group">
-              <label for="email" >Email address</label>
-              <input type="email" id="email" placeholder="Email address" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-            </div>
-</form>
+          <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="group">
+          	<label for="mce-FirstName">First name</label>
+          	<input type="firstname" value="" name="FirstName" class="required first name" placeholder="First name" id="mce-FirstName">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="group">
+            <label for="mce-EMAIL">Email Address</label>
+            <input type="email" value="" name="EMAIL" class="required email" placeholder="Email address" id="mce-EMAIL">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+          </div>
+          	<div id="mce-responses" class="clear">
+          		<div class="response" id="mce-error-response" style="display:none"></div>
+          		<div class="response" id="mce-success-response" style="display:none"></div>
+          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7366f87e6c3f60d49a9d7ef07_14e7f66ee5" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" hidden></div>
+          </form>
         </div>
         <div class="col_2">
           <div>
@@ -35,7 +39,7 @@
           </ul>
         </div>
         <div class="col_3">
-          <div >
+          <div>
             <h4 class="title">Boten</h4>
           </div>
           <ul>
@@ -72,11 +76,17 @@
     <div class="FooterMenu-Mobile">
       <div class="form">
         <h4 class="form-title">Sign up for our newsletter</h4>
-        <form>
-          <label for="email-mobile">Email address</label>
-          <input id="email-mobile" type="text" placeholder="Email-adres"required>
+        <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label for="mce-EMAIL">Email Address</label>
+          <input type="email" value="" name="EMAIL" class="required email" placeholder="Email address" id="mce-EMAIL">
           <span class="highlight"></span>
           <span class="bar"></span>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7366f87e6c3f60d49a9d7ef07_14e7f66ee5" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" hidden></div>
         </form>
       </div>
 
@@ -164,7 +174,7 @@ label{
  line-height: 1.52;
  color: #4c565c;
 }
-.footer-menu-container .footer-menu ul li a{
+.footer-menu ul li a{
   height: 260px;
   font-size: 15px;
   font-weight: 500;
@@ -312,7 +322,6 @@ form{
   .footer-menu-container{
     display: block;
   }
-
   .footer-menu{
    display: grid;
    grid-template-columns: repeat(6, minmax(0, 1fr));

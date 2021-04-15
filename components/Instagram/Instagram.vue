@@ -5,8 +5,8 @@
           <h3 class="instagram-title">Join the Davy family</h3>
       </div>
       <div class="container-two">
-        <a href="https://www.instagram.com/davyorsted/?hl=nl">
-        <p class="instagram-name">@davyandOrsted</p>
+        <a href="https://www.instagram.com/davyorsted/?hl=nl" target="_blank">
+        <p class="instagram-name">@davyorsted</p>
         <i class="fab fa-instagram"></i>
         </a>
       </div>
