@@ -140,7 +140,7 @@ li a:active{
 .MobileMenu-title{
   font-size: 28px;
   color: white;
-  font-family: 'FuturaStd';
+  font-family:  "FuturaStd";
   margin: 15px;
   background: none;
   border: none;

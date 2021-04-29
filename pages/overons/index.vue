@@ -1,9 +1,5 @@
 <template lang="html">
   <section class="overOns">
-    <div class="blok">
-      <div class="container-top-border"></div>
-      <!-- <img :src="story.content.header_image" alt="logo" class="overons-start-image"> -->
-    </div>
     <section class="quote">
       <h1 class="quote-text">{{ story.content.quote }}</h1>
     </section>
@@ -80,6 +76,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.post-content a{
+  color: #3e4b51;
+  text-decoration: none;
+}
 .overOns{
   width: 100vw;
   height: auto;
@@ -162,7 +162,9 @@ export default {
   padding: 10px 0;
   }
 .overons-text,
-.second-overons-text{
+.overons-text .post-content p a,
+.second-overons-text,
+.second-overons-text p a{
   width: 100%;
   height: auto;
   padding: 16px 20px 20px 30px;
@@ -189,14 +191,17 @@ export default {
 /* IPAD */
 @media (min-width: 768px) {
   .overons-text,
-  .second-overons-text{
+  .second-overons-text,
+  .overons-text a,
+  .second-overons-text a{
     font-size: 17px;
   }
   .quote-text,
   .quote-text-second{
     font-size: 26px;
   }
-  .post-content p{
+  .post-content p,
+  .post-content p a{
     font-size: 16px;
   }
 }

@@ -148,6 +148,7 @@ export default {
 }
 a{
   font-size: 18px;
+  font-family: "FuturaStd";
 }
 label{
   display: none;
@@ -163,6 +164,7 @@ label{
   width: 100%;
   top: 0;
   left: 0;
+
 }
 .footer-menu-container{
   display: none;

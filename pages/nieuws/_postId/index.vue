@@ -1,8 +1,5 @@
 <template>
   <div class="post">
-    <div class="blok">
-      <div class="container-top-border"></div>
-    </div>
     <h1 class="post-title">{{ story.content.title }}</h1>
     <div class="post-container">
       <p class="post-preview-summary">{{story.content.summary}}</p>

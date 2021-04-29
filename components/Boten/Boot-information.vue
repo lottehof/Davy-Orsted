@@ -85,7 +85,7 @@ export default {
   background-color: white;
   border: none;
   text-transform: uppercase;
-  font-family: FuturaStd;
+  font-family: 'Raleway', sans-serif;
   height: 30px;
   margin-right: 20px;
   border-bottom: none;

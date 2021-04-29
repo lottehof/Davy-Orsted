@@ -37,7 +37,7 @@ hr{
   padding: 0;
 }
 body{
-  font-family: 'FuturaStd';
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -79,6 +79,11 @@ a{
   font-size: 12px;
   white-space: pre-line;
 }
+.post-content a{
+  color: #3e4b51;
+  text-decoration: underline;
+  font-size: 14px;
+}
 .handmade-section-two > ul{
   font-size: 14px;
 
@@ -94,9 +99,18 @@ a{
   margin-left: 3px;
   font-size: 14px;
 }
+.post-preview-text > ul{
+  list-style: none;
+  padding: 0;
+}
+.post-preview-text > ul li::before{
+    content: "+";
+    margin-right: 13px;
+}
 
 @media (min-width: 768px) {
-  .post-content p{
+  .post-content p,
+  .post-content p a{
     font-size: 16px;
   }
 }

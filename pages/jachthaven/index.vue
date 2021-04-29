@@ -1,11 +1,5 @@
 <template lang="html">
   <section>
-    <div class="blok-one">
-      <div class="container-top-border"></div>
-      <!-- <figure>
-        <img class="jachthaven-start-image" :src="story.content.header_image" alt="header image jachthaven">
-      </figure> -->
-    </div>
     <section class="quote">
       <h1 class="quote-text">{{ story.content.title }}</h1>
     </section>

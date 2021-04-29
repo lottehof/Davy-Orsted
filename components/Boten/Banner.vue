@@ -28,19 +28,21 @@ export default {
   font-weight: 600;
   text-align: center;
   margin-bottom: 5px;
+  color: #2A393F;
   /* padding: 16px 20px 20px 30px; */
   /* height:  120px; */
 }
 
 .calltoaction-button{
   width: 150px;
-  background-color: black;
+  background-color: #2A393F;
   color: white;
   text-transform: uppercase;
   border: none;
   height: 50px;
   margin: 0 auto;
   display: inline-block;
+    border-radius: 5px;
 }
 .calltoaction-button:hover{
   border-radius: 50px;
@@ -63,7 +65,7 @@ export default {
     font-size: 16px;
   }
   .calltoaction-button{
-    width: 160px;
+    width: 170px;
   }
 }
 </style>

@@ -1,9 +1,5 @@
 <template lang="html">
   <section class="contact">
-    <div class="contact-start">
-      <h1 class="container-title"><b>Kom met ons in contact</b></h1>
-      <p class="container-info">Heeft u nog meer informatie nodig? Bel ons, stuur een mailtje of vul het formulier in en wij helpen u zo spoedig mogelijk</p>
-    </div>
     <section class="contact-container">
       <div class="container-content">
         <div class="content-box">
@@ -59,8 +55,16 @@ export default {
 label{
   display: none;
 }
+.container-top-border{
+  width: 100vw;
+  height: 35px;
+  background-color: #3E4B51;
+}
 .contact{
   width: 100vw;
+}
+.form-button:hover{
+  border-radius: 20px;
 }
 
 .fa-instagram{
@@ -207,7 +211,9 @@ input, textarea{
 }
 
 @media (min-width: 1390px) {
-
+  .container-top-border{
+    height: 55px;
+  }
   .container-title{
     font-size: 32px;
   }
@@ -228,7 +234,6 @@ input, textarea{
   .small{
     float: right;
   }
-
 }
 
 @media (min-width: 1800px) {

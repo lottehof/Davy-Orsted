@@ -86,7 +86,7 @@ export default {
   text-align: center;
   color: #3e4b51;
   margin-bottom: 30px;
-  font-family: 'FuturaStd', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .modellen-container{
   display: grid;
@@ -144,7 +144,7 @@ figure{
   color: #3d4333;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'FuturaStd', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .boat-sub-title{
   height: 16px;

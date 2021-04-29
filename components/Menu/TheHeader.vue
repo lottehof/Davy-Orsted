@@ -9,7 +9,7 @@
       <nuxt-link to="/">Menu
       </nuxt-link>
     </div>
-  </header>
+    </header>
 </template>
 
 <script>
@@ -22,15 +22,38 @@ export default {
 </script>
 
 <style scoped>
+.test{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .header{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  .header-logo{
+    width: 50%;
+  }
+
+
   header{
     position: absolute;
     display: flex;
     align-items: center;
     background-color: transparent;
     background-position: top;
-    padding: 0 16px;
+    /* padding: 0 16px; */
     height: 60px;
-    width: 100vw;
+    width: 20vw;
   }
 
   header:nth-child{
@@ -58,6 +81,7 @@ export default {
     height: 20%;
     width: 25px;
     cursor: pointer;
+    padding: 0 16px;
   }
   .app-links{
     justify-self: end;
@@ -91,13 +115,30 @@ export default {
     width: 24px;
   }
   .brand-name {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 20px;
 
   }
   .brand-name a {
     display: block;
     font-size: 16px;
+  }
+}
+@media (min-width: 500px) {
+  .header{
+    height: 60px;
+  }
+  .header-logo{
+    width: 35%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header{
+    height: 60px;
+  }
+  .header-logo{
+    width: 25%;
   }
 }
 
@@ -118,6 +159,25 @@ export default {
 @media (min-width: 1800px) {
   header{
     height: 100px;
+  }
+}
+
+@media (min-width: 1390px) {
+  .header{
+    height: 80px;
+  }
+  .header-logo{
+    width: 30%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header{
+    height: 107px;
+  }
+  .header-logo{
+    height: 33px;
+    width: 300px;
   }
 }
 </style>

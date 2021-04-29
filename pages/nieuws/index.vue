@@ -1,9 +1,5 @@
 <template>
   <section class="nieuwsbrief">
-    <div class="blok">
-      <div class="container-top-border">
-      </div>
-    </div>
     <div class="nieuwsbrief-container">
       <h1 class="nieuwsbrief-container-title">D&Ø Magazine</h1>
       <div class="content">
@@ -90,10 +86,15 @@ export default {
   text-align: center;
 }
 .post-preview-holder{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
+
 
 @media (min-width: 1390px) {
   .container-top-border{

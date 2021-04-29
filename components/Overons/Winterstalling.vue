@@ -63,16 +63,6 @@ export default {
   .winterstalling-image{
     height: 70%;
   }
-  /* .winterstalling-image{
-    height: 400px;
-    width: 600px;
-  }
-  .grey-box{
-    width: 300px;
-    height: 550px;
-
-
-  } */
 }
 
 @media (min-width: 1100px) {

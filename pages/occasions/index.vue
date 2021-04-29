@@ -1,8 +1,5 @@
 <template lang="html">
   <section class="occasions">
-    <section>
-      <div class="container-top-border"></div>
-    </section>
     <h1 class="occasions-title">Occasions</h1>
     <div v-if="occasionposts.length === 0">
       <p  class="geen-aanbod">Momenteel hebben wij geen occasion aanbod voor u.

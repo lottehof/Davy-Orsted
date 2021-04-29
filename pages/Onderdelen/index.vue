@@ -1,8 +1,5 @@
 <template lang="html">
   <section class="onderdelen">
-    <section>
-      <div class="container-top-border"></div>
-    </section>
     <h1 class="onderdelen-title">Onderdelen</h1>
     <div v-if="onderdelenposts.length === 0">
       <p class="geen-aanbod">Momenteel hebben wij geen onderdelen aanbod voor u.

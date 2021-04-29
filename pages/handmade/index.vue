@@ -1,11 +1,5 @@
 <template lang="html">
   <section class="hand-made">
-    <section>
-      <div class="container-top-border"></div>
-    </section>
-    <!-- <section class="quote">
-      <h1 class="quote-text">{{ story.content.Title }}</h1>
-    </section> -->
     <section class="handmade-container-one">
       <div class="handmade-content">
           <img :src="story.content.content_one_image" alt="boot" class="handmade-content-image-one">
