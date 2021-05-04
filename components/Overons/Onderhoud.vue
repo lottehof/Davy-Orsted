@@ -2,7 +2,6 @@
   <section id="Onderhoud">
     <div class="onderhoud">
       <article class="onderhoud-article">
-        <h2 class="onderhoud-title">{{blok.onderhoud}}</h2>
         <section class="onderhoud-content" v-html="$options.filters.markdown(blok.onderhoud_content)"></section>
       </article>
       <section class="onderhoud-image-holder">

@@ -66,6 +66,7 @@ export default {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
 }
 
 @media (min-width: 768px) {
@@ -78,13 +79,17 @@ export default {
 }
 @media (min-width: 1400px) {
   .test{
-    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .post-preview-holder{
     width: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
   .title{
     display: flex;

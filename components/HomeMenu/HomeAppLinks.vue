@@ -20,7 +20,7 @@
            <ul>
              <li><a href="/boten/raptor">D&Ø Raptor</a></li>
              <li><a href="/boten/crafter">D&Ø Crafter</a></li>
-             <li><a href="/boten/marshal">Marshall</a></li>
+             <li><a href="/boten/marshall">Marshall</a></li>
              <li><a href="/boten/moonraker">Moonraker</a></li>
             </ul>
          </div>
@@ -62,7 +62,7 @@
         <a class="MobileMenu-link" href="/boten">Alle boten</a><br>
         <a class="MobileMenu-link" href="/boten/raptor">D&Ø Raptor</a><br>
         <a class="MobileMenu-link" href="/boten/crafter">D&Ø Crafter</a><br>
-        <a class="MobileMenu-link" href="/boten/marshal">Marshal</a><br>
+        <a class="MobileMenu-link" href="/boten/marshall">Marshall</a><br>
         <a class="MobileMenu-link" href="/boten/moonraker">Moonraker</a><br>
       </div>
       <button @click="isOpenJachthaven = !isOpenJachthaven" class="MobileMenu-title three">Werf</button>

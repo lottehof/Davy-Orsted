@@ -2,7 +2,6 @@
   <section id="Winterstalling">
     <div class="winterstalling">
       <article class="winterstalling-article">
-        <h2 class="winterstalling-title">{{blok.winterstalling}}</h2>
         <section class="winterstalling-content" v-html="$options.filters.markdown(blok.winterstalling_content)"></section>
       </article>
       <section class="winterstalling-image-holder">
@@ -70,7 +69,7 @@ export default {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-template-rows: repeat(1, minmax(0, 1fr));
     margin-top: 50px;
-    height: 600px;
+    height: 800px;
   }
   .winterstalling-article{
     grid-column: 1 / span 3;

@@ -108,6 +108,9 @@ a{
     margin-right: 13px;
 }
 
+.second-overons-text .post-content h3{
+  font-family: "Raleway", sans-serif;
+}
 @media (min-width: 768px) {
   .post-content p,
   .post-content p a{

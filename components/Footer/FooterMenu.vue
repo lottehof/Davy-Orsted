@@ -4,18 +4,18 @@
       <div class="footer-menu">
         <div class="col_1">
           <div>
-            <h4 class="title">Sign up for our newsletter</h4>
+            <h4 class="title">Schrijf je in voor onze nieuwsbrief</h4>
           </div>
           <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="group">
-          	<label for="mce-FirstName">First name</label>
-          	<input type="firstname" value="" name="FirstName" class="required first name" placeholder="First name" id="mce-FirstName">
+          	<label for="mce-FirstName">Voornaam</label>
+          	<input type="firstname" value="" name="FirstName" class="required first name" placeholder="Voornaam" id="mce-FirstName">
             <span class="highlight"></span>
             <span class="bar"></span>
           </div>
           <div class="group">
-            <label for="mce-EMAIL">Email Address</label>
-            <input type="email" value="" name="EMAIL" class="required email" placeholder="Email address" id="mce-EMAIL">
+            <label for="mce-EMAIL">E-mail</label>
+            <input type="email" value="" name="EMAIL" class="required email" placeholder="E-mail" id="mce-EMAIL">
             <span class="highlight"></span>
             <span class="bar"></span>
           </div>
@@ -45,7 +45,7 @@
           <ul>
             <li><a href="/boten/raptor">D&Ø Raptor</a></li>
             <li><a href="/boten/crafter">D&Ø Crafter</a></li>
-            <li><a href="/boten/marshal">Marshall</a></li>
+            <li><a href="/boten/marshall">Marshall</a></li>
             <li><a href="/boten/moonraker">Moonraker</a></li>
           </ul>
         </div>
@@ -75,10 +75,10 @@
     </div>
     <div class="FooterMenu-Mobile">
       <div class="form">
-        <h4 class="form-title">Sign up for our newsletter</h4>
+        <h4 class="form-title">Schrijf je in voor onze nieuwsbrief</h4>
         <form action="https://app.us1.list-manage.com/subscribe/post?u=7366f87e6c3f60d49a9d7ef07&amp;id=14e7f66ee5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <label for="mce-EMAIL">Email Address</label>
-          <input type="email" value="" name="EMAIL" class="required email" placeholder="Email address" id="mce-EMAIL">
+          <label for="mce-EMAIL">E-mail</label>
+          <input type="email" value="" name="EMAIL" class="required email" placeholder="E-mail" id="mce-EMAIL">
           <span class="highlight"></span>
           <span class="bar"></span>
           <div id="mce-responses" class="clear">
@@ -103,7 +103,7 @@
       <div v-if="isOpenBoten" class="FooterMenu-box">
         <a class="FooterMenu-link" href="/boten/raptor">D&Ø Raptor</a><br>
         <a class="FooterMenu-link" href="/boten/crafter">D&Ø Crafter</a><br>
-        <a class="FooterMenu-link" href="/boten/marshal">Marshall</a><br>
+        <a class="FooterMenu-link" href="/boten/marshall">Marshall</a><br>
         <a class="FooterMenu-link" href="/boten/moonraker">Moonraker</a><br><br>
       </div>
       <hr>

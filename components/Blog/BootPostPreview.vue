@@ -10,7 +10,7 @@
         <h1 class="post-preview-title">{{ title }}</h1>
       </div>
       <div class="post-preview-content">
-        <p class="post-preview-text">{{ excerpt }}</p>
+          <section class="post-preview-text" v-html="$options.filters.markdown(excerpt)"></section>
       </div>
       <div class="button-holder">
       <button class="post-preview-button" type="button" name="button">Lees meer</button>
@@ -49,7 +49,7 @@ export default {
   width: 350px;
   margin-bottom: 50px;
   /* border: 1px solid red; */
-  min-height: 700px;
+  min-height: 720px;
   position: relative;
   /* z-index: 0; */
 }

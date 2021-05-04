@@ -1,5 +1,5 @@
 <template lang="html">
-  <section id="Parking">
+  <!-- <section id="Parking"> -->
     <div class="parking">
       <article class="parking-article">
         <section class="parking-content" v-html="$options.filters.markdown(blok.parking_content)"></section>
@@ -10,7 +10,7 @@
         </section>
       </section>
     </div>
-  </section>
+  <!-- </section> -->
 </template>
 
 <script>
@@ -50,6 +50,7 @@ export default {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-template-rows: repeat(1, minmax(0, 1fr));
     margin-top: 50px;
+    margin-bottom: 100px;
   }
   .parking-article{
     grid-column: 4 / span 3;

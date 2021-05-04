@@ -256,7 +256,7 @@ export default {
 }
 @media (min-width: 1390px) {
   .container-top-border{
-    height: 55px;
+    height: 70px;
   }
   .title{
     height: 55px;

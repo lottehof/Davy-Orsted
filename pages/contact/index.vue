@@ -3,12 +3,14 @@
     <section class="contact-container">
       <div class="container-content">
         <div class="content-box">
+              <!-- <img src="@/assets/img/17a.jpeg" alt="" class="contact-image"> -->
           <h2 class="davyOrsted">Davy&Ørsted</h2>
           <div class="DOborder"></div>
           <p><a class="contact-info" onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">Boeierspad 24</a></p>
           <p><a class="contact-info" onclick="window.location.href='https://www.google.com/maps/place/Davy+en+%C3%98rsted/@52.3334536,4.8458888,17z/data=!4m5!3m4!1s0x47c5e1e58ec01133:0x54c6c7fa2f3ec933!8m2!3d52.3328226!4d4.849228'">1081 KE Amsterdam</a></p>
           <p class="grey-contact"><a class="grey-contact-info" onclick="window.location.href='mailto:info@davy-orsted.nl'">info@davy-orsted.nl</a></p>
           <p><a class="contact-info" href="tel://+31653244451">06 53 24 44 51</a></p>
+
 
 
         </div>
@@ -52,6 +54,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+/* .contact-image{
+  width: 300px;
+  height: 100px;
+} */
 label{
   display: none;
 }

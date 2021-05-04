@@ -24,10 +24,9 @@
     <Parking
       :key="story.content._id"
       :blok="story.content" />
-    <Information
-      :key="story.content._id"
-      :blok="story.content" />
-    <Instagram />
+    <!-- <Information
+     /> -->
+    <!-- <Instagram /> -->
   </section>
 </template>
 

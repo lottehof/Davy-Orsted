@@ -80,6 +80,7 @@ export default {
   color: #3e4b51;
   text-decoration: none;
 }
+
 .overOns{
   width: 100vw;
   height: auto;
@@ -283,11 +284,6 @@ export default {
     height: 82px;
   }
   .quote{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100vw; */
     margin-bottom: 35px;
     margin-top: 35px;
     width: 100vw;

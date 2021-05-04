@@ -10,12 +10,15 @@
       <div class="modellen-container">
 
         <div class="modellen-content">
+          <nuxt-link to="/boten/crafter">
           <figure>
             <img class="modellen-image" :src="blok.boat_image_one" alt="sleop D&O Raptor">
           </figure>
+        </nuxt-link>
         </div>
 
         <div class="modellen-content">
+        <nuxt-link to="/boten/crafter">
           <div class="modellen-title">
             <h2 class="boat-title">{{ blok.first_boat_title }}</h2>
               <h5 class="boat-sub-title">{{ blok.boat_subtitle_1 }}</h5>
@@ -27,26 +30,32 @@
             <li class="list-items">{{ blok.boat_1_listItem_4 }}</li>
             <li class="list-items">{{ blok.boat_1_listItem_5 }}</li>
           </ul>
+            </nuxt-link>
         </div>
 
+
         <div class="modellen-content">
+          <nuxt-link to="/boten/raptor">
           <figure>
             <img class="modellen-image" :src="blok.boat_image_two" alt="sleop D&O Raptor">
           </figure>
+          </nuxt-link>
         </div>
 
         <div class="modellen-content">
-          <div class="modellen-title">
-            <h2 class="boat-title">{{ blok.second_boat_title }}</h2>
-              <h5 class="boat-sub-title">{{ blok.boat_subtitle_2 }}</h5>
-          </div>
-          <ul>
-            <li class="list-items">{{ blok.boat_2_listItem_1 }}</li>
-            <li class="list-items">{{ blok.boat_2_listItem_2 }}</li>
-            <li class="list-items">{{ blok.boat_2_listItem_3 }}</li>
-            <li class="list-items">{{ blok.boat_2_listItem_4 }}</li>
-            <li class="list-items">{{ blok.boat_2_listItem_5 }}</li>
-          </ul>
+          <nuxt-link to="/boten/raptor">
+            <div class="modellen-title">
+              <h2 class="boat-title">{{ blok.second_boat_title }}</h2>
+                <h5 class="boat-sub-title">{{ blok.boat_subtitle_2 }}</h5>
+            </div>
+            <ul>
+              <li class="list-items">{{ blok.boat_2_listItem_1 }}</li>
+              <li class="list-items">{{ blok.boat_2_listItem_2 }}</li>
+              <li class="list-items">{{ blok.boat_2_listItem_3 }}</li>
+              <li class="list-items">{{ blok.boat_2_listItem_4 }}</li>
+              <li class="list-items">{{ blok.boat_2_listItem_5 }}</li>
+            </ul>
+          </nuxt-link>
         </div>
       </div>
     </div>

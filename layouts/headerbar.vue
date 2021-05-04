@@ -1,8 +1,10 @@
 <template lang="html">
   <div class="">
     <div class="navbar-fixed">
+      <div class="mobile-menu">
     <TheHeader />
     <TheSideNav />
+      </div>
     <header class="header">
       <a href="/" class="test">
       <img src="@/assets/img/logo-1.png"
@@ -12,18 +14,42 @@
     </header>
     <div class="blok-one">
       <div class="container-top-border">
-      <nav id="main-navbar" class="second-navbar">
-        <ul>
-          <li><a href="/overons">Over ons</a></li>
-          <li><a href="/boten">Boten</a></li>
-          <li><a href="/jachthaven">De werf</a></li>
-          <li><a href="/handmade">Handmade</a></li>
+      <nav>
+      <ul>
+          <li><a href="/overons">Over ons</a>
+            <ul>
+                <li><a href="/handmade">Hand made</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/boten">Boten</a>
+          <!-- First Tier Drop Down -->
+          <ul>
+              <li><a href="/boten/raptor">D&Ø Raptor</a></li>
+              <li><a href="/boten/crafter">D&Ø Crafter</a></li>
+              <li><a href="/boten/moonraker">Moonraker</a></li>
+              <li><a href="/boten/marshall">Marshall</a></li>
+          </ul>
+          </li>
+          <li><a href="/jachthaven">De Werf</a>
+          <!-- First Tier Drop Down -->
+          <ul>
+              <li><a href="/jachthaven#Onderhoud">Onderhoud</a></li>
+              <li><a href="/jachthaven#Winterstalling">Winterstalling</a></li>
+          </ul>
+          </li>
           <li><a href="/nieuws">D&Ø Magazine</a></li>
-          <li><a href="/onderdelen">Onderdelen</a></li>
-          <li><a href="/occasions">Occasions</a></li>
+          <li><a >Shop</a>
+          <!-- First Tier Drop Down -->
+          <ul>
+              <li><a href="/occasions">Occasions</a></li>
+              <li><a href="/onderdelen">Onderdelen</a></li>
+          </ul>
+          </li>
+
           <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+      </ul>
+  </nav>
     </div>
     </div>
       </div>
@@ -51,10 +77,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.second-navbar{
+nav{
   display: none;
 }
-
 .container-top-border{
   width: 100vw;
   height: 35px;
@@ -109,34 +134,63 @@ export default {
     width: 20%;
   }
   .container-top-border{
-    height: 55px;
+    height: 60px;
   }
-  .second-navbar {
+  .mobile-menu{
+    display: none;
+  }
+  nav {
+  	background-color: #3E4B51;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
   }
 
-  .second-navbar ul {
+  nav ul {
+  	padding: 0;
     margin: 0;
-    padding: 0;
+  	list-style: none;
+  	position: relative;
+    z-index: 100;
+  	}
+
+  nav ul li {
+  	display:inline-block;
+  	background-color: #3E4B51;
+  	}
+
+  nav li,
+  nav a {
+  	display:block;
+  	padding:0 10px;
+  	color:#FFF;
+  	font-size:20px;
+  	line-height: 60px;
+  	text-decoration:none;
   }
 
-  .second-navbar li {
-    display: inline-block;
-    padding: 10px 20px;
+  nav li:hover {
+  	background-color: #000000;
   }
 
-  .second-navbar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    float: right;
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+  	display: none;
+  	position: absolute;
+  	top: 60px; /* the height of the main nav */
   }
 
-  .second-navbar li a:hover {
-    text-decoration: underline;
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+  	display:inherit;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+  	width:170px;
+  	float:none;
+  	display:list-item;
+  	position: relative;
   }
 }
 

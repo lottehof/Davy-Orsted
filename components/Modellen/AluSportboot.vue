@@ -9,45 +9,53 @@
       <div class="modellen-container">
 
         <div class="modellen-content">
-          <figure>
-            <img class="modellen-image" :src="blok.boat_image_three" alt="sleop D&O Raptor">
-          </figure>
-          <div class="grey-box"></div>
+          <nuxt-link to="/boten/moonraker">
+            <figure>
+              <img class="modellen-image" :src="blok.boat_image_three" alt="sloep D&O Raptor">
+            </figure>
+            <div class="grey-box"></div>
+        </nuxt-link>
         </div>
 
         <div class="modellen-content">
-          <div class="modellen-title">
-            <h2 class="boat-title">{{ blok.third_boat_title }}</h2>
-              <h5 class="boat-sub-title">{{ blok.boat_subtitle_3 }}</h5>
-          </div>
-          <ul>
-            <li class="list-items">{{ blok.boat_3_listItem_1}}</li>
-            <li class="list-items">{{ blok.boat_3_listItem_2 }}</li>
-            <li class="list-items">{{ blok.boat_3_listItem_3 }}</li>
-            <li class="list-items">{{ blok.boat_3_listItem_4 }}</li>
-            <li class="list-items">{{ blok.boat_3_listItem_5 }}</li>
-          </ul>
+          <nuxt-link to="/boten/moonraker">
+            <div class="modellen-title">
+              <h2 class="boat-title">{{ blok.third_boat_title }}</h2>
+                <h5 class="boat-sub-title">{{ blok.boat_subtitle_3 }}</h5>
+            </div>
+            <ul>
+              <li class="list-items">{{ blok.boat_3_listItem_1}}</li>
+              <li class="list-items">{{ blok.boat_3_listItem_2 }}</li>
+              <li class="list-items">{{ blok.boat_3_listItem_3 }}</li>
+              <li class="list-items">{{ blok.boat_3_listItem_4 }}</li>
+              <li class="list-items">{{ blok.boat_3_listItem_5 }}</li>
+            </ul>
+          </nuxt-link>
         </div>
 
         <div class="modellen-content">
-          <figure>
-            <img class="modellen-image" :src="blok.boat_image_four" alt="sleop D&O Raptor">
-          </figure>
-          <div class="grey-box-second"></div>
+          <nuxt-link to="/boten/marshall">
+            <figure>
+              <img class="modellen-image" :src="blok.boat_image_four" alt="sleop D&O Raptor">
+            </figure>
+            <div class="grey-box-second"></div>
+          </nuxt-link>
         </div>
 
         <div class="modellen-content">
-          <div class="modellen-title">
-            <h2 class="boat-title">{{ blok.fourth_boat_title}}</h2>
-              <h5 class="boat-sub-title">{{ blok.boat_subtitle_4 }}</h5>
-          </div>
-          <ul>
-            <li class="list-items">{{ blok.boat_4_listItem_1 }}</li>
-            <li class="list-items">{{ blok.boat_4_listItem_2 }}</li>
-            <li class="list-items">{{ blok.boat_4_listItem_3 }}</li>
-            <li class="list-items">{{ blok.boat_4_listItem_4 }}</li>
-            <li class="list-items">{{ blok.boat_4_listItem_5 }}</li>
-          </ul>
+          <nuxt-link to="/boten/marshall">
+            <div class="modellen-title">
+              <h2 class="boat-title">{{ blok.fourth_boat_title}}</h2>
+                <h5 class="boat-sub-title">{{ blok.boat_subtitle_4 }}</h5>
+            </div>
+            <ul>
+              <li class="list-items">{{ blok.boat_4_listItem_1 }}</li>
+              <li class="list-items">{{ blok.boat_4_listItem_2 }}</li>
+              <li class="list-items">{{ blok.boat_4_listItem_3 }}</li>
+              <li class="list-items">{{ blok.boat_4_listItem_4 }}</li>
+              <li class="list-items">{{ blok.boat_4_listItem_5 }}</li>
+            </ul>
+          </nuxt-link>
         </div>
       </div>
     </div>
