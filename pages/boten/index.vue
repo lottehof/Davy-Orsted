@@ -64,17 +64,21 @@ export default {
 .post-preview-holder{
   width: 350px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-
 }
 
 @media (min-width: 768px) {
+  .test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .post-preview-holder{
-    width: 300px;
+    width: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
 }
 @media (min-width: 1400px) {
