@@ -2,8 +2,8 @@
   <footer class="footer">
     <p class="copyrights1">	&#169; Davy &amp; Orsted </p>
       <div class="legal-information">
-        <p><a href="#">Terms &amp; Conditions</a></p>
-        <p><a href="#">Privacy Statement</a></p>
+        <p><a href="/voorwaarden">Terms &amp; Conditions</a></p>
+        <p><a href="/privacystatement">Privacy Statement</a></p>
       </div>
     <p class="copyrights2">	&#169; Davy &amp; Orsted </p>
   </footer>

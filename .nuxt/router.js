@@ -4,17 +4,19 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _094d0700 = () => interopDefault(import('../pages/boten/index.vue' /* webpackChunkName: "pages/boten/index" */))
-const _7fba86b0 = () => interopDefault(import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */))
-const _6d63734a = () => interopDefault(import('../pages/handmade/index.vue' /* webpackChunkName: "pages/handmade/index" */))
-const _4509a8f4 = () => interopDefault(import('../pages/jachthaven/index.vue' /* webpackChunkName: "pages/jachthaven/index" */))
-const _35acc7e6 = () => interopDefault(import('../pages/nieuws/index.vue' /* webpackChunkName: "pages/nieuws/index" */))
-const _06f95cbc = () => interopDefault(import('../pages/occasions/index.vue' /* webpackChunkName: "pages/occasions/index" */))
-const _1b359868 = () => interopDefault(import('../pages/onderdelen/index.vue' /* webpackChunkName: "pages/onderdelen/index" */))
-const _512373b0 = () => interopDefault(import('../pages/overons/index.vue' /* webpackChunkName: "pages/overons/index" */))
-const _4b24a61d = () => interopDefault(import('../pages/boten/_bootpostId/index.vue' /* webpackChunkName: "pages/boten/_bootpostId/index" */))
-const _46a9d790 = () => interopDefault(import('../pages/nieuws/_postId/index.vue' /* webpackChunkName: "pages/nieuws/_postId/index" */))
-const _5ba0ea42 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _5226e9ae = () => interopDefault(import('../pages/boten/index.vue' /* webpackChunkName: "pages/boten/index" */))
+const _7a76e1ce = () => interopDefault(import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */))
+const _e8cb0ffe = () => interopDefault(import('../pages/handmade/index.vue' /* webpackChunkName: "pages/handmade/index" */))
+const _9cdb482a = () => interopDefault(import('../pages/jachthaven/index.vue' /* webpackChunkName: "pages/jachthaven/index" */))
+const _7bf86284 = () => interopDefault(import('../pages/nieuws/index.vue' /* webpackChunkName: "pages/nieuws/index" */))
+const _a0ba2236 = () => interopDefault(import('../pages/occasions/index.vue' /* webpackChunkName: "pages/occasions/index" */))
+const _f0836942 = () => interopDefault(import('../pages/onderdelen/index.vue' /* webpackChunkName: "pages/onderdelen/index" */))
+const _d7a507ce = () => interopDefault(import('../pages/overons/index.vue' /* webpackChunkName: "pages/overons/index" */))
+const _3c9101b8 = () => interopDefault(import('../pages/privacystatement/index.vue' /* webpackChunkName: "pages/privacystatement/index" */))
+const _43ef0c4f = () => interopDefault(import('../pages/voorwaarden/index.vue' /* webpackChunkName: "pages/voorwaarden/index" */))
+const _0111ff46 = () => interopDefault(import('../pages/boten/_bootpostId/index.vue' /* webpackChunkName: "pages/boten/_bootpostId/index" */))
+const _c1b918a2 = () => interopDefault(import('../pages/nieuws/_postId/index.vue' /* webpackChunkName: "pages/nieuws/_postId/index" */))
+const _3b8de770 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -29,47 +31,55 @@ export const routerOptions = {
 
   routes: [{
     path: "/boten",
-    component: _094d0700,
+    component: _5226e9ae,
     name: "boten"
   }, {
     path: "/contact",
-    component: _7fba86b0,
+    component: _7a76e1ce,
     name: "contact"
   }, {
     path: "/handmade",
-    component: _6d63734a,
+    component: _e8cb0ffe,
     name: "handmade"
   }, {
     path: "/jachthaven",
-    component: _4509a8f4,
+    component: _9cdb482a,
     name: "jachthaven"
   }, {
     path: "/nieuws",
-    component: _35acc7e6,
+    component: _7bf86284,
     name: "nieuws"
   }, {
     path: "/occasions",
-    component: _06f95cbc,
+    component: _a0ba2236,
     name: "occasions"
   }, {
     path: "/onderdelen",
-    component: _1b359868,
+    component: _f0836942,
     name: "onderdelen"
   }, {
     path: "/overons",
-    component: _512373b0,
+    component: _d7a507ce,
     name: "overons"
   }, {
+    path: "/privacystatement",
+    component: _3c9101b8,
+    name: "privacystatement"
+  }, {
+    path: "/voorwaarden",
+    component: _43ef0c4f,
+    name: "voorwaarden"
+  }, {
     path: "/boten/:bootpostId",
-    component: _4b24a61d,
+    component: _0111ff46,
     name: "boten-bootpostId"
   }, {
     path: "/nieuws/:postId",
-    component: _46a9d790,
+    component: _c1b918a2,
     name: "nieuws-postId"
   }, {
     path: "/",
-    component: _5ba0ea42,
+    component: _3b8de770,
     name: "index"
   }],
 

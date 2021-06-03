@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_55499049 from 'nuxt_plugin_plugin_55499049' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_4c68b00e from 'nuxt_plugin_bootstrapvue_4c68b00e' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_recaptcha_9953b064 from 'nuxt_plugin_recaptcha_9953b064' // Source: ./recaptcha.js (mode: 'all')
-import nuxt_plugin_templatesplugin59b203cf_182d1515 from 'nuxt_plugin_templatesplugin59b203cf_182d1515' // Source: ./templates.plugin.59b203cf.js (mode: 'all')
+import nuxt_plugin_plugin_7c5b7980 from 'nuxt_plugin_plugin_7c5b7980' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_399112f6 from 'nuxt_plugin_bootstrapvue_399112f6' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_recaptcha_14fe7c76 from 'nuxt_plugin_recaptcha_14fe7c76' // Source: ./recaptcha.js (mode: 'all')
+import nuxt_plugin_templatesplugin7aa4c4b8_3c1b8422 from 'nuxt_plugin_templatesplugin7aa4c4b8_3c1b8422' // Source: ./templates.plugin.7aa4c4b8.js (mode: 'all')
 import nuxt_plugin_components_6fb0430c from 'nuxt_plugin_components_6fb0430c' // Source: ../plugins/components (mode: 'all')
 import nuxt_plugin_filters_98405076 from 'nuxt_plugin_filters_98405076' // Source: ../plugins/filters (mode: 'all')
 
@@ -82,7 +82,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"testcms","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Davy&Ørsted"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Baskervville&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Ficon?family=Material+Icons"}],"script":[{"src":"https:\u002F\u002Fwww.google.com\u002Frecaptcha\u002Fapi.js","async":true,"defer":true},{"src":"\u002F\u002Fapp.storyblok.com\u002Ff\u002Fstoryblok-latest.js?t=6VEe757Atuepg6h4rcvVhAtt"}],"style":[]},
+    head: {"title":"Davy&Ørsted","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Davy&Ørsted"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002FLogo.png"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Baskervville&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Ficon?family=Material+Icons"}],"script":[{"src":"https:\u002F\u002Fwww.google.com\u002Frecaptcha\u002Fapi.js","async":true,"defer":true},{"src":"\u002F\u002Fapp.storyblok.com\u002Ff\u002Fstoryblok-latest.js?t=6VEe757Atuepg6h4rcvVhAtt"}],"style":[]},
 
     store,
     router,
@@ -211,20 +211,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_55499049 === 'function') {
-    await nuxt_plugin_plugin_55499049(app.context, inject)
+  if (typeof nuxt_plugin_plugin_7c5b7980 === 'function') {
+    await nuxt_plugin_plugin_7c5b7980(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_4c68b00e === 'function') {
-    await nuxt_plugin_bootstrapvue_4c68b00e(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_399112f6 === 'function') {
+    await nuxt_plugin_bootstrapvue_399112f6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_recaptcha_9953b064 === 'function') {
-    await nuxt_plugin_recaptcha_9953b064(app.context, inject)
+  if (typeof nuxt_plugin_recaptcha_14fe7c76 === 'function') {
+    await nuxt_plugin_recaptcha_14fe7c76(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_templatesplugin59b203cf_182d1515 === 'function') {
-    await nuxt_plugin_templatesplugin59b203cf_182d1515(app.context, inject)
+  if (typeof nuxt_plugin_templatesplugin7aa4c4b8_3c1b8422 === 'function') {
+    await nuxt_plugin_templatesplugin7aa4c4b8_3c1b8422(app.context, inject)
   }
 
   if (typeof nuxt_plugin_components_6fb0430c === 'function') {

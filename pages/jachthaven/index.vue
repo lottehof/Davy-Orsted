@@ -48,43 +48,44 @@ export default {
 
 /*CONNECTOR TO CMS STORYBLOK*/
 /*--------------------------*/
-  data () {
-    return {
-      story: { content: {} }
-    }
-  },
-  mounted () {
-    // Use the input event for instant update of content
-    this.$storybridge.on('input', (event) => {
-      if (event.story.id === this.story.id) {
-        this.story.content = event.story.content
-      }
-    })
-    // Use the bridge to listen the events
-    this.$storybridge.on(['published', 'change'], (event) => {
-      // window.location.reload()
-      this.$nuxt.$router.go({
-        path: this.$nuxt.$router.currentRoute,
-        force: true,
-      })
-    })
-  },
-  asyncData (context){
-    //load the JSOn from the API - loading the home content (index page)
-    return context.app.$storyapi.get('cdn/stories/jachthaven', {
-      version: process.env.NODE_ENV == "production" ? "published" : 'draft',
-    }).then((res) => {
-      return res.data
-    }).catch((res) => {
-      if (!res.response){
-        console.error(res)
-        context.error({ statusCode: 404, message: 'Failed to receive content from api'})
-      } else {
-        console.error(res.resonse.data)
-        context.error({ statusCode: res.response.status, message: res.response.data })
-      }
-    })
+data () {
+return {
+  story: { content: {} }
+}
+},
+mounted () {
+// Use the input event for instant update of content
+this.$storybridge.on('input', (event) => {
+  if (event.story.id === this.story.id) {
+    this.story.content = event.story.content
   }
+})
+// Use the bridge to listen the events
+this.$storybridge.on(['published', 'change'], (event) => {
+  // window.location.reload()
+  this.$nuxt.$router.go({
+    path: this.$nuxt.$router.currentRoute,
+    force: true,
+  })
+})
+},
+asyncData (context){
+//load the JSOn from the API - loading the home content (index page)
+return context.app.$storyapi.get('cdn/stories/jachthaven', {
+  version: process.env.NODE_ENV == "production" ? "published" : 'draft',
+}).then((res) => {
+  return res.data
+}).catch((res) => {
+  if (!res.response){
+    console.error(res)
+    context.error({ statusCode: 404, message: 'Failed to receive content from api'})
+  } else {
+    console.error(res.resonse.data)
+    context.error({ statusCode: res.response.status, message: res.response.data })
+  }
+})
+}
+
 }
 </script>
 

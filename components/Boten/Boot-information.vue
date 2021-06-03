@@ -8,9 +8,6 @@
       class="boot-button"
       :class="uvactive"
        type="button" name="button">Uitvoering</button>
-      <button @click="specificaties"
-      class="boot-button"
-      :class="spactive"  type="button" name="button">Specificaties</button>
     </div>
     <div class="boot-description" v-if="description_content">
       <section>
@@ -19,9 +16,6 @@
     </div>
     <div class="boot-uitvoering" v-if="uitvoering_content">
       <section class="onderhoud-content" v-html="$options.filters.markdown(blok.uitvoering)"></section>
-    </div>
-    <div class="boot-specificaties" v-if="specificaties_content">
-      <section class="onderhoud-content" v-html="$options.filters.markdown(blok.specificaties)"></section>
     </div>
   </section>
 </template>
