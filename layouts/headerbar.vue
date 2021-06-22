@@ -106,7 +106,6 @@ nav{
     width: 50%;
   }
 
-
 /*MEDIA QUERIES*/
 /*-------------------*/
 @media (min-width: 500px) {
@@ -158,7 +157,6 @@ nav{
   	display:inline-block;
   	background-color: #3E4B51;
   	}
-
   nav li,
   nav a {
   	display:block;
@@ -172,8 +170,6 @@ nav{
   nav li:hover {
   	background-color: #000000;
   }
-
-  /* Hide Dropdowns by Default */
   nav ul ul {
   	display: none;
   	position: absolute;
